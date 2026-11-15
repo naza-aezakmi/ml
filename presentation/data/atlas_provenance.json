@@ -1,0 +1,50 @@
+{
+  "samples": 5,
+  "step": 10000,
+  "scale": 2,
+  "features": [
+    "range_m",
+    "plane_slope_deg",
+    "roughness_m"
+  ],
+  "scope": "All stored production windows; Earth filtered by the production water mask",
+  "worker_sha256": "99dca373d0b293fc8b66406b3c6abdff25219e59af8564485a9e475af7d2c395",
+  "bodies": {
+    "earth": {
+      "windows": 1356072,
+      "stored_windows": 1400048,
+      "label": "NOAA ETOPO 2022 · 60″",
+      "source_url": "https://www.ncei.noaa.gov/products/etopo-global-relief-model",
+      "tile_stream_sha256": "80dd4c43c44ff95e29b0a6a829fd21ad2db750de46a70f1d527a5ea8a8d7e3e0",
+      "dtype": "little-endian float64",
+      "shape": [
+        1356072,
+        3
+      ]
+    },
+    "moon": {
+      "windows": 380956,
+      "stored_windows": 380956,
+      "label": "NASA LRO LOLA · LDEM_64",
+      "source_url": "https://ode.rsl.wustl.edu/mars/pagehelp/Content/Missions_Instruments/LRO/LOLA/GDR/GDRDEM.htm",
+      "tile_stream_sha256": "47b32f247e110653c0bd808970b8fc6cbbd8ab7f27714d3101aa50322d882459",
+      "dtype": "little-endian float64",
+      "shape": [
+        380956,
+        3
+      ]
+    },
+    "mars": {
+      "windows": 1446856,
+      "stored_windows": 1446856,
+      "label": "NASA MGS MOLA · MEGDR 32",
+      "source_url": "https://pds-geosciences.wustl.edu/missions/mgs/megdr.html",
+      "tile_stream_sha256": "8dfecbf8fd44ca976f273f352c0546a43199401741324f9c4e083f795233b39f",
+      "dtype": "little-endian float64",
+      "shape": [
+        1446856,
+        3
+      ]
+    }
+  }
+}

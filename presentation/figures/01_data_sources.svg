@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="648pt" viewBox="0 0 1152 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-15T21:38:22.650988</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 1152 648 
+L 1152 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 96.48 486 
+L 174.24 486 
+L 174.24 408.24 
+L 96.48 408.24 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g clip-path="url(#pb2386c37a7)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAGwAAABsCAYAAACPZlfNAAABPUlEQVR4nO3cwQnDQAwAQTmkDYP7r8rgFpy304TvsTBTgBAs+h233ffvmQXO83p95nHsr8+cae36WTKVZQSLESxGsBjBYgSLESxGsBjBYgSLESxGsBjBYgSLESxGsBjBYgSLESxGsBjBYr4rXgzNrHk1ZFcXliNYjGAxgsUIFiNYjGAxgsUIFiNYjGAxgsUIFiNYjGAxgsUIFiNYjGAxgsVsvi5q7erCYgSLESxGsBjBYgSLESxGsBjBYgSLESxGsBjBYgSLESxGsBjBYgSLESxGsBjBYnxdNK1dXViMYDGCxQgWI1iMYDGCxQgWI1iMYDGCxQgWI1iMYDGCxQgWI1iMYDGCxQgW4+uiae3qwmIEixEsRrAYwWIEixEsRrAYwWIEixEsRrAYwWIEixEsRrAYwWIEixEsRrAYwWL+dWgvtA6We2wAAAAASUVORK5CYII=" id="imagee774221598" transform="scale(1 -1) translate(0 -77.76)" x="96.48" y="-408.24" width="77.76" height="77.76"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+  </g>
+  <g id="axes_2">
+   <g id="patch_3">
+    <path d="M 453.6 486 
+L 531.36 486 
+L 531.36 408.24 
+L 453.6 408.24 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g clip-path="url(#p0adcd829ae)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAG0AAABsCAYAAABgpDzzAAABQElEQVR4nO3cwQkCQBAEwVFMQzD/qART0Lcm4T0KugJYFpr9HXd5vz/fHfB8vk6M3eNx//tMaddtux6ZmqOKBioaqGigooGKBioaqGigooGKBioaqGigooGKBioaqGigooGKBioaqGigooFu2kukE/tKu25dGqlooKKBigYqGqhooKKBigYqGqhooKKBigYqGqhooKKBigYqGqhooKKBiga69M2StevWpZGKBioaqGigooGKBioaqGigooGKBioaqGigooGKBioaqGigooGKBioaqGigooH6ZmnWrluXRioaqGigooGKBioaqGigooGKBioaqGigooGKBioaqGigooGKBioaqGigooH6ZmnWrluXRioaqGigooGKBioaqGigooGKBioaqGigooGKBioaqGigooGKBioaqGigooGKBvoBcsgvtEQux3cAAAAASUVORK5CYII=" id="image39e372d447" transform="scale(1 -1) translate(0 -77.76)" x="453.6" y="-408.24" width="78.48" height="77.76"/>
+   </g>
+   <g id="matplotlib.axis_3"/>
+   <g id="matplotlib.axis_4"/>
+  </g>
+  <g id="axes_3">
+   <g id="patch_4">
+    <path d="M 810.72 486 
+L 888.48 486 
+L 888.48 408.24 
+L 810.72 408.24 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g clip-path="url(#p1b64c0bf2e)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAG0AAABsCAYAAABgpDzzAAABQElEQVR4nO3cwQkCQBAEwVFMQzD/qART0Lcm4T0KugJYFpr9HXd5vz/fHfB8vk6M3eNx//tMaddtux6ZmqOKBioaqGigooGKBioaqGigooGKBioaqGigooGKBioaqGigooGKBioaqGigooFu2kukE/tKu25dGqlooKKBigYqGqhooKKBigYqGqhooKKBigYqGqhooKKBigYqGqhooKKBiga69M2StevWpZGKBioaqGigooGKBioaqGigooGKBioaqGigooGKBioaqGigooGKBioaqGigooH6ZmnWrluXRioaqGigooGKBioaqGigooGKBioaqGigooGKBioaqGigooGKBioaqGigooH6ZmnWrluXRioaqGigooGKBioaqGigooGKBioaqGigooGKBioaqGigooGKBioaqGigooGKBvoBcsgvtEQux3cAAAAASUVORK5CYII=" id="imagefc8b06f290" transform="scale(1 -1) translate(0 -77.76)" x="810.72" y="-408.24" width="78.48" height="77.76"/>
+   </g>
+   <g id="matplotlib.axis_5"/>
+   <g id="matplotlib.axis_6"/>
+  </g>
+  <g id="line2d_1">
+   <path d="M 63.36 134.784 
+L 1088.64 134.784 
+" style="fill: none; stroke: #e4e4e7; stroke-width: 0.8; stroke-linecap: square"/>
+  </g>
+  <g id="line2d_2">
+   <path d="M 63.36 550.152 
+L 1088.64 550.152 
+" style="fill: none; stroke: #e4e4e7; stroke-width: 0.8; stroke-linecap: square"/>
+  </g>
+  <g id="text_1">
+   <text style="fill: #006fee; font: 700 11px 'Arial'; text-anchor: start" x="63.36" y="37.584" transform="rotate(-0 63.36 37.584)">ДАННЫЕ / ПРОИСХОЖДЕНИЕ</text>
+  </g>
+  <g id="text_2">
+   <text style="fill: #18181b; font: 700 29px 'Arial'; text-anchor: start" x="63.36" y="82.944" transform="rotate(-0 63.36 82.944)">Три мира. Одинаковый формат сравнения.</text>
+  </g>
+  <g id="text_3">
+   <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: start" x="63.36" y="116.64" transform="rotate(-0 63.36 116.64)">Цифровые модели рельефа → окна 10 × 10 км → 25 отсчётов высоты</text>
+  </g>
+  <g id="text_4">
+   <text style="fill: #71717a; font: 11px 'Arial'; text-anchor: end" x="1088.64" y="37.584" transform="rotate(-0 1088.64 37.584)">01 / 08</text>
+  </g>
+  <g id="text_5">
+   <text style="fill: #71717a; font: 700 21px 'Arial'; text-anchor: start" x="80.64" y="191.16" transform="rotate(-0 80.64 191.16)">Луна</text>
+  </g>
+  <g id="text_6">
+   <text style="fill: #18181b; font: 15px 'Arial'; text-anchor: start" x="80.64" y="228.744" transform="rotate(-0 80.64 228.744)">NASA · LRO LOLA</text>
+  </g>
+  <g id="text_7">
+   <text style="fill: #71717a; font: 12px 'Arial'; text-anchor: start" x="80.64" y="257.256" transform="rotate(-0 80.64 257.256)">LDEM_64 · ≈474 м</text>
+  </g>
+  <g id="text_8">
+   <text style="fill: #18181b; font: 700 34px 'Arial'; text-anchor: start" x="80.64" y="327.24" transform="rotate(-0 80.64 327.24)">380 956</text>
+  </g>
+  <g id="text_9">
+   <text style="fill: #71717a; font: 12px 'Arial'; text-anchor: start" x="80.64" y="356.4" transform="rotate(-0 80.64 356.4)">окон в полном EDA</text>
+  </g>
+  <g id="text_10">
+   <text style="fill: #71717a; font: 13px 'Arial'" transform="translate(213.12 442.608)">5 × 5</text>
+   <text style="fill: #71717a; font: 13px 'Arial'" transform="translate(213.12 460.08)">шаг 2,5 км</text>
+  </g>
+  <g id="text_11">
+   <text style="fill: #c66b42; font: 700 21px 'Arial'; text-anchor: start" x="437.76" y="191.16" transform="rotate(-0 437.76 191.16)">Марс</text>
+  </g>
+  <g id="text_12">
+   <text style="fill: #18181b; font: 15px 'Arial'; text-anchor: start" x="437.76" y="228.744" transform="rotate(-0 437.76 228.744)">NASA · MGS MOLA</text>
+  </g>
+  <g id="text_13">
+   <text style="fill: #71717a; font: 12px 'Arial'; text-anchor: start" x="437.76" y="257.256" transform="rotate(-0 437.76 257.256)">MEGDR 32 · ≈1853 м</text>
+  </g>
+  <g id="text_14">
+   <text style="fill: #18181b; font: 700 34px 'Arial'; text-anchor: start" x="437.76" y="327.24" transform="rotate(-0 437.76 327.24)">1 446 856</text>
+  </g>
+  <g id="text_15">
+   <text style="fill: #71717a; font: 12px 'Arial'; text-anchor: start" x="437.76" y="356.4" transform="rotate(-0 437.76 356.4)">окон в полном EDA</text>
+  </g>
+  <g id="text_16">
+   <text style="fill: #71717a; font: 13px 'Arial'" transform="translate(570.24 442.608)">5 × 5</text>
+   <text style="fill: #71717a; font: 13px 'Arial'" transform="translate(570.24 460.08)">шаг 2,5 км</text>
+  </g>
+  <g id="text_17">
+   <text style="fill: #006fee; font: 700 21px 'Arial'; text-anchor: start" x="794.88" y="191.16" transform="rotate(-0 794.88 191.16)">Земля</text>
+  </g>
+  <g id="text_18">
+   <text style="fill: #18181b; font: 15px 'Arial'; text-anchor: start" x="794.88" y="228.744" transform="rotate(-0 794.88 228.744)">NOAA · ETOPO 2022</text>
+  </g>
+  <g id="text_19">
+   <text style="fill: #71717a; font: 12px 'Arial'; text-anchor: start" x="794.88" y="257.256" transform="rotate(-0 794.88 257.256)">60″ · ≈1853 м</text>
+  </g>
+  <g id="text_20">
+   <text style="fill: #18181b; font: 700 34px 'Arial'; text-anchor: start" x="794.88" y="327.24" transform="rotate(-0 794.88 327.24)">1 356 072</text>
+  </g>
+  <g id="text_21">
+   <text style="fill: #71717a; font: 12px 'Arial'; text-anchor: start" x="794.88" y="356.4" transform="rotate(-0 794.88 356.4)">окон в полном EDA</text>
+  </g>
+  <g id="text_22">
+   <text style="fill: #71717a; font: 11px 'Arial'; text-anchor: start" x="794.88" y="395.28" transform="rotate(-0 794.88 395.28)">после региональной маски воды</text>
+  </g>
+  <g id="text_23">
+   <text style="fill: #71717a; font: 13px 'Arial'" transform="translate(927.36 442.608)">5 × 5</text>
+   <text style="fill: #71717a; font: 13px 'Arial'" transform="translate(927.36 460.08)">шаг 2,5 км</text>
+  </g>
+  <g id="text_24">
+   <text style="fill: #18181b; font: 500 15px 'Arial'; text-anchor: start" x="63.36" y="581.904" transform="rotate(-0 63.36 581.904)">Сравниваем форму поверхности на общем масштабе измерений.</text>
+  </g>
+  <g id="text_25">
+   <text style="fill: #71717a; font: 9.5px 'Arial'" transform="translate(63.36 608.534578)">Источники: NASA PDS / LOLA / MOLA; NOAA NCEI ETOPO 2022. Нативное разрешение указано приблизительно у экватора.</text>
+   <text style="fill: #71717a; font: 9.5px 'Arial'" transform="translate(63.36 618.84)">Температура и атмосфера: NASA POWER, MCD 6.2, Diviner — отдельный контекст, вне рейтинга.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb2386c37a7">
+   <rect x="96.48" y="408.24" width="77.76" height="77.76"/>
+  </clipPath>
+  <clipPath id="p0adcd829ae">
+   <rect x="453.6" y="408.24" width="77.76" height="77.76"/>
+  </clipPath>
+  <clipPath id="p1b64c0bf2e">
+   <rect x="810.72" y="408.24" width="77.76" height="77.76"/>
+  </clipPath>
+ </defs>
+</svg>

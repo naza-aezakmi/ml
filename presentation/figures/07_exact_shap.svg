@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="648pt" viewBox="0 0 1152 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-15T21:38:25.334330</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 1152 648 
+L 1152 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 288 447.12 
+L 1013.76 447.12 
+L 1013.76 187.92 
+L 288 187.92 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 288 447.12 
+L 288 187.92 
+" clip-path="url(#pbe5e1c39fd)" style="fill: none; stroke: #e4e4e7; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: middle" x="288" y="468.425156" transform="rotate(-0 288 468.425156)">0.000</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 434.839557 447.12 
+L 434.839557 187.92 
+" clip-path="url(#pbe5e1c39fd)" style="fill: none; stroke: #e4e4e7; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: middle" x="434.839557" y="468.425156" transform="rotate(-0 434.839557 468.425156)">0.002</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 581.679114 447.12 
+L 581.679114 187.92 
+" clip-path="url(#pbe5e1c39fd)" style="fill: none; stroke: #e4e4e7; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: middle" x="581.679114" y="468.425156" transform="rotate(-0 581.679114 468.425156)">0.004</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 728.518671 447.12 
+L 728.518671 187.92 
+" clip-path="url(#pbe5e1c39fd)" style="fill: none; stroke: #e4e4e7; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: middle" x="728.518671" y="468.425156" transform="rotate(-0 728.518671 468.425156)">0.006</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 875.358228 447.12 
+L 875.358228 187.92 
+" clip-path="url(#pbe5e1c39fd)" style="fill: none; stroke: #e4e4e7; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_5">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: middle" x="875.358228" y="468.425156" transform="rotate(-0 875.358228 468.425156)">0.008</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="fill: #71717a; font: 12px 'Arial'; text-anchor: middle" x="650.88" y="491.598281" transform="rotate(-0 650.88 491.598281)">Баллы несовпадения D</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_11"/>
+     <g id="text_7">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: end" x="276" y="216.712449" transform="rotate(-0 276 216.712449)">Средний балл списка</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_12"/>
+     <g id="text_8">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: end" x="276" y="258.868063" transform="rotate(-0 276 258.868063)">Форма рельефа</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_13"/>
+     <g id="text_9">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: end" x="276" y="301.058209" transform="rotate(-0 276 301.058209)">Наклон плоскости</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_14"/>
+     <g id="text_10">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: end" x="276" y="343.286948" transform="rotate(-0 276 343.286948)">Неровность</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_15"/>
+     <g id="text_11">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: end" x="276" y="385.515687" transform="rotate(-0 276 385.515687)">Перепад высот</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_16"/>
+     <g id="text_12">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: end" x="276" y="427.744426" transform="rotate(-0 276 427.744426)">Балл кандидата</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 288 199.701818 
+L 806.4 199.701818 
+L 806.4 224.194487 
+L 288 224.194487 
+z
+" clip-path="url(#pbe5e1c39fd)" style="fill: #a1a1aa"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 665.684005 241.930557 
+L 806.4 241.930557 
+L 806.4 266.423226 
+L 665.684005 266.423226 
+z
+" clip-path="url(#pbe5e1c39fd)" style="fill: #006fee"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 654.225334 284.159296 
+L 665.684005 284.159296 
+L 665.684005 308.651965 
+L 654.225334 308.651965 
+z
+" clip-path="url(#pbe5e1c39fd)" style="fill: #006fee"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 654.225334 326.388035 
+L 665.329391 326.388035 
+L 665.329391 350.880704 
+L 654.225334 350.880704 
+z
+" clip-path="url(#pbe5e1c39fd)" style="fill: #c84045"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 663.763102 368.616774 
+L 665.329391 368.616774 
+L 665.329391 393.109443 
+L 663.763102 393.109443 
+z
+" clip-path="url(#pbe5e1c39fd)" style="fill: #006fee"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 288 410.845513 
+L 663.763102 410.845513 
+L 663.763102 435.338182 
+L 288 435.338182 
+z
+" clip-path="url(#pbe5e1c39fd)" style="fill: #18181b"/>
+   </g>
+   <g id="line2d_17">
+    <path d="M 806.4 224.616774 
+L 806.4 241.50827 
+" clip-path="url(#pbe5e1c39fd)" style="fill: none; stroke-dasharray: 0.7,1.155; stroke-dashoffset: 0; stroke: #a1a1aa; stroke-width: 0.7"/>
+   </g>
+   <g id="line2d_18">
+    <path d="M 665.684005 266.845513 
+L 665.684005 283.737009 
+" clip-path="url(#pbe5e1c39fd)" style="fill: none; stroke-dasharray: 0.7,1.155; stroke-dashoffset: 0; stroke: #a1a1aa; stroke-width: 0.7"/>
+   </g>
+   <g id="line2d_19">
+    <path d="M 654.225334 309.074252 
+L 654.225334 325.965748 
+" clip-path="url(#pbe5e1c39fd)" style="fill: none; stroke-dasharray: 0.7,1.155; stroke-dashoffset: 0; stroke: #a1a1aa; stroke-width: 0.7"/>
+   </g>
+   <g id="line2d_20">
+    <path d="M 665.329391 351.302991 
+L 665.329391 368.194487 
+" clip-path="url(#pbe5e1c39fd)" style="fill: none; stroke-dasharray: 0.7,1.155; stroke-dashoffset: 0; stroke: #a1a1aa; stroke-width: 0.7"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 288 447.12 
+L 1013.76 447.12 
+" style="fill: none; stroke: #e4e4e7; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_13">
+    <text style="fill: #006fee; font: 12px 'Arial'; text-anchor: start" x="819.36" y="257.279079" transform="rotate(-0 819.36 257.279079)">-0,001917</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: #006fee; font: 12px 'Arial'; text-anchor: start" x="678.644005" y="299.507818" transform="rotate(-0 678.644005 299.507818)">-0,0001561</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: #c84045; font: 12px 'Arial'; text-anchor: start" x="678.289391" y="341.736557" transform="rotate(-0 678.289391 341.736557)">+0,0001512</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: #006fee; font: 12px 'Arial'; text-anchor: start" x="678.289391" y="383.965296" transform="rotate(-0 678.289391 383.965296)">-2,133e-05</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: #18181b; font: 700 12px 'Arial'; text-anchor: start" x="819.36" y="215.058777" transform="rotate(-0 819.36 215.058777)">0,007061</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: #18181b; font: 700 12px 'Arial'; text-anchor: start" x="676.723102" y="426.202473" transform="rotate(-0 676.723102 426.202473)">0,005118</text>
+   </g>
+  </g>
+  <g id="line2d_21">
+   <path d="M 63.36 134.784 
+L 1088.64 134.784 
+" style="fill: none; stroke: #e4e4e7; stroke-width: 0.8; stroke-linecap: square"/>
+  </g>
+  <g id="line2d_22">
+   <path d="M 63.36 550.152 
+L 1088.64 550.152 
+" style="fill: none; stroke: #e4e4e7; stroke-width: 0.8; stroke-linecap: square"/>
+  </g>
+  <g id="text_19">
+   <text style="fill: #006fee; font: 700 11px 'Arial'; text-anchor: start" x="63.36" y="37.584" transform="rotate(-0 63.36 37.584)">ОБЪЯСНИМОСТЬ / EXACT SHAP</text>
+  </g>
+  <g id="text_20">
+   <text style="fill: #18181b; font: 700 29px 'Arial'; text-anchor: start" x="63.36" y="82.944" transform="rotate(-0 63.36 82.944)">Каждый вклад в итоговый балл можно проверить.</text>
+  </g>
+  <g id="text_21">
+   <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: start" x="63.36" y="116.64" transform="rotate(-0 63.36 116.64)">Jezero → Иран, кандидат №01 · фон: средний балл этих десяти кандидатов</text>
+  </g>
+  <g id="text_22">
+   <text style="fill: #71717a; font: 11px 'Arial'; text-anchor: end" x="1088.64" y="37.584" transform="rotate(-0 1088.64 37.584)">07 / 08</text>
+  </g>
+  <g id="text_23">
+   <text style="fill: #18181b; font: 700 16px 'Arial'; text-anchor: start" x="288" y="520.992" transform="rotate(-0 288 520.992)">0,007061  +  (-0,001943)  =  0,005118</text>
+  </g>
+  <g id="text_24">
+   <text style="fill: #18181b; font: 500 15px 'Arial'; text-anchor: start" x="63.36" y="581.904" transform="rotate(-0 63.36 581.904)">Видно, какие характеристики улучшают совпадение и где остаётся различие.</text>
+  </g>
+  <g id="text_25">
+   <text style="fill: #71717a; font: 9.5px 'Arial'" transform="translate(63.36 608.484703)">Синий вклад уменьшает D, красный увеличивает. Exact interventional SHAP аддитивного score по четырём дескрипторам.</text>
+   <text style="fill: #71717a; font: 9.5px 'Arial'" transform="translate(63.36 618.84)">Это объяснение относительно текущего списка, не уверенность модели и не причинное заключение. Значения округлены.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pbe5e1c39fd">
+   <rect x="288" y="187.92" width="725.76" height="259.2"/>
+  </clipPath>
+ </defs>
+</svg>

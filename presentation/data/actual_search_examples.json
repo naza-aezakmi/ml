@@ -1,0 +1,1744 @@
+[
+  {
+    "id": 1,
+    "kind": "results",
+    "matches": [
+      {
+        "position": 1213075,
+        "rotation": 3,
+        "score": 0.005118009203404722,
+        "usa": false,
+        "lat": 31.701050877654833,
+        "lon": 59.35209675822028,
+        "range": 326,
+        "slope": 1.203896020696468,
+        "roughness": 17.779718782927922,
+        "bare": null,
+        "volcanic": null,
+        "error": 14.27366806395609,
+        "values": [
+          214,
+          120,
+          58,
+          18,
+          12,
+          148,
+          76,
+          22,
+          -16,
+          -26,
+          98,
+          38,
+          0,
+          -40,
+          -52,
+          56,
+          6,
+          -30,
+          -62,
+          -86,
+          10,
+          -28,
+          -60,
+          -90,
+          -112
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.007060767693339473,
+          "score": 0.005118009203404722,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.004074751999999999,
+              "baseline_penalty": 0.0059913472,
+              "shap_value": -0.001916595200000001
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 0.00044444444444444447,
+              "baseline_penalty": 0.0004657777777777778,
+              "shap_value": -2.1333333333333328e-05
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 9.298544080106877e-05,
+              "baseline_penalty": 0.0002490560720104371,
+              "shap_value": -0.00015607063120936832
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 0.0005058273181592086,
+              "baseline_penalty": 0.00035458664355125845,
+              "shap_value": 0.0001512406746079502
+            }
+          ]
+        },
+        "country": "Iran",
+        "country_code": "IR"
+      },
+      {
+        "position": 1095842,
+        "rotation": 1,
+        "score": 0.005466236848342635,
+        "usa": false,
+        "lat": 34.84867295061347,
+        "lon": 59.88792610080191,
+        "range": 308,
+        "slope": 1.1942959924305494,
+        "roughness": 21.59896293806719,
+        "bare": null,
+        "volcanic": null,
+        "error": 15.443108495377478,
+        "values": [
+          230,
+          122,
+          74,
+          56,
+          20,
+          184,
+          100,
+          36,
+          -4,
+          -12,
+          118,
+          60,
+          0,
+          -32,
+          -42,
+          68,
+          18,
+          -26,
+          -52,
+          -62,
+          48,
+          -6,
+          -40,
+          -60,
+          -78
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.007060767693339473,
+          "score": 0.005466236848342635,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.004769792000000001,
+              "baseline_penalty": 0.0059913472,
+              "shap_value": -0.0012215551999999992
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 0.00028444444444444453,
+              "baseline_penalty": 0.0004657777777777778,
+              "shap_value": -0.00018133333333333326
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 0.0001654527362277201,
+              "baseline_penalty": 0.0002490560720104371,
+              "shap_value": -8.3603335782717e-05
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 0.0002465476676704699,
+              "baseline_penalty": 0.00035458664355125845,
+              "shap_value": -0.00010803897588078853
+            }
+          ]
+        },
+        "country": "Iran",
+        "country_code": "IR"
+      },
+      {
+        "position": 3530135,
+        "rotation": 2,
+        "score": 0.0055901226303997215,
+        "usa": false,
+        "lat": -22.527980836461094,
+        "lon": -68.59115264071158,
+        "range": 314,
+        "slope": 1.3241875453602077,
+        "roughness": 19.32881786349078,
+        "bare": null,
+        "volcanic": null,
+        "error": 15.13375036136119,
+        "values": [
+          220,
+          138,
+          68,
+          22,
+          -6,
+          188,
+          108,
+          34,
+          -8,
+          -34,
+          138,
+          68,
+          0,
+          -38,
+          -58,
+          82,
+          22,
+          -28,
+          -62,
+          -84,
+          38,
+          -14,
+          -54,
+          -80,
+          -94
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.007060767693339473,
+          "score": 0.0055901226303997215,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.004580607999999999,
+              "baseline_penalty": 0.0059913472,
+              "shap_value": -0.0014107392000000012
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 1.7777777777777783e-05,
+              "baseline_penalty": 0.0004657777777777778,
+              "shap_value": -0.000448
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 0.0009427422522290225,
+              "baseline_penalty": 0.0002490560720104371,
+              "shap_value": 0.0006936861802185854
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 4.89946003929217e-05,
+              "baseline_penalty": 0.00035458664355125845,
+              "shap_value": -0.00030559204315833675
+            }
+          ]
+        },
+        "country": "Chile",
+        "country_code": "CL"
+      },
+      {
+        "position": 1128905,
+        "rotation": 3,
+        "score": 0.005811342358768663,
+        "usa": false,
+        "lat": 33.949352358339574,
+        "lon": 59.78980573891212,
+        "range": 304,
+        "slope": 1.225721169290873,
+        "roughness": 22.957909312478794,
+        "bare": null,
+        "volcanic": null,
+        "error": 14.67645733819984,
+        "values": [
+          220,
+          112,
+          66,
+          50,
+          26,
+          188,
+          96,
+          32,
+          -6,
+          -30,
+          142,
+          68,
+          0,
+          -34,
+          -52,
+          66,
+          14,
+          -28,
+          -56,
+          -68,
+          14,
+          -14,
+          -44,
+          -70,
+          -84
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.007060767693339473,
+          "score": 0.005811342358768663,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.004307968,
+              "baseline_penalty": 0.0059913472,
+              "shap_value": -0.0016833792000000005
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 0.00064,
+              "baseline_penalty": 0.0004657777777777778,
+              "shap_value": 0.00017422222222222226
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 5.394092139775438e-06,
+              "baseline_penalty": 0.0002490560720104371,
+              "shap_value": -0.00024366197987066166
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 0.0008579802666288874,
+              "baseline_penalty": 0.00035458664355125845,
+              "shap_value": 0.000503393623077629
+            }
+          ]
+        },
+        "country": "Iran",
+        "country_code": "IR"
+      },
+      {
+        "position": 1155684,
+        "rotation": 0,
+        "score": 0.006504694867115959,
+        "usa": false,
+        "lat": 33.22989588452045,
+        "lon": 68.00178135337381,
+        "range": 298,
+        "slope": 1.2332790868082308,
+        "roughness": 22.394284985236737,
+        "bare": null,
+        "volcanic": null,
+        "error": 15.00847760434082,
+        "values": [
+          212,
+          122,
+          54,
+          24,
+          22,
+          186,
+          102,
+          28,
+          -22,
+          -36,
+          132,
+          60,
+          0,
+          -42,
+          -68,
+          74,
+          12,
+          -28,
+          -56,
+          -76,
+          32,
+          -12,
+          -42,
+          -64,
+          -86
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.007060767693339473,
+          "score": 0.006504694867115959,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.004505087999999999,
+              "baseline_penalty": 0.0059913472,
+              "shap_value": -0.0014862592000000011
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 0.00144,
+              "baseline_penalty": 0.0004657777777777778,
+              "shap_value": 0.0009742222222222222
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 4.5149496936147664e-08,
+              "baseline_penalty": 0.0002490560720104371,
+              "shap_value": -0.00024901092251350095
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 0.0005595617176190235,
+              "baseline_penalty": 0.00035458664355125845,
+              "shap_value": 0.00020497507406776509
+            }
+          ]
+        },
+        "country": "Afghanistan",
+        "country_code": "AF"
+      },
+      {
+        "position": 1767498,
+        "rotation": 2,
+        "score": 0.0066100541756591675,
+        "usa": false,
+        "lat": 17.941445815864224,
+        "lon": 8.649387353065794,
+        "range": 318,
+        "slope": 1.1718560017463886,
+        "roughness": 20.932653916787526,
+        "bare": null,
+        "volcanic": null,
+        "error": 17.4568725721419,
+        "values": [
+          216,
+          100,
+          24,
+          18,
+          0,
+          140,
+          88,
+          10,
+          -30,
+          -44,
+          92,
+          46,
+          0,
+          -58,
+          -80,
+          68,
+          6,
+          -20,
+          -62,
+          -94,
+          40,
+          -14,
+          -42,
+          -64,
+          -102
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.007060767693339473,
+          "score": 0.0066100541756591675,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.006094848000000004,
+              "baseline_penalty": 0.0059913472,
+              "shap_value": 0.00010350080000000404
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 1.7777777777777783e-05,
+              "baseline_penalty": 0.0004657777777777778,
+              "shap_value": -0.000448
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 0.00041572946447442365,
+              "baseline_penalty": 0.0002490560720104371,
+              "shap_value": 0.00016667339246398654
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 8.169893340696233e-05,
+              "baseline_penalty": 0.00035458664355125845,
+              "shap_value": -0.0002728877101442961
+            }
+          ]
+        },
+        "country": "Niger",
+        "country_code": "NE"
+      },
+      {
+        "position": 1102334,
+        "rotation": 1,
+        "score": 0.0068154950941814105,
+        "usa": false,
+        "lat": 34.668808832158696,
+        "lon": 49.69776965521402,
+        "range": 314,
+        "slope": 1.2842706886986384,
+        "roughness": 20.8132265638944,
+        "bare": null,
+        "volcanic": null,
+        "error": 17.93927534768336,
+        "values": [
+          210,
+          138,
+          78,
+          46,
+          8,
+          162,
+          76,
+          26,
+          -6,
+          -32,
+          126,
+          32,
+          0,
+          -34,
+          -60,
+          104,
+          18,
+          -32,
+          -58,
+          -82,
+          16,
+          -54,
+          -68,
+          -86,
+          -104
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.007060767693339473,
+          "score": 0.0068154950941814105,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.0064363519999999985,
+              "baseline_penalty": 0.0059913472,
+              "shap_value": 0.00044500479999999825
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 1.7777777777777783e-05,
+              "baseline_penalty": 0.0004657777777777778,
+              "shap_value": -0.000448
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 0.0002998295644487502,
+              "baseline_penalty": 0.0002490560720104371,
+              "shap_value": 5.0773492438313105e-05
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 6.153575195488196e-05,
+              "baseline_penalty": 0.00035458664355125845,
+              "shap_value": -0.0002930508915963765
+            }
+          ]
+        },
+        "country": "Iran",
+        "country_code": "IR"
+      },
+      {
+        "position": 719517,
+        "rotation": 0,
+        "score": 0.009313515499959086,
+        "usa": true,
+        "lat": 45.91031623558239,
+        "lon": -120.01135236509371,
+        "range": 324,
+        "slope": 1.2656555917192505,
+        "roughness": 20.478359309280627,
+        "bare": null,
+        "volcanic": null,
+        "error": 21.078747590879303,
+        "values": [
+          246,
+          174,
+          112,
+          64,
+          10,
+          180,
+          120,
+          56,
+          28,
+          -16,
+          120,
+          62,
+          0,
+          -28,
+          -42,
+          106,
+          54,
+          6,
+          -32,
+          -78,
+          58,
+          10,
+          -22,
+          -46,
+          -58
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.007060767693339473,
+          "score": 0.009313515499959086,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.008886271999999999,
+              "baseline_penalty": 0.0059913472,
+              "shap_value": 0.0028949247999999986
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 0.00028444444444444453,
+              "baseline_penalty": 0.0004657777777777778,
+              "shap_value": -0.00018133333333333326
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 0.0001225868364832429,
+              "baseline_penalty": 0.0002490560720104371,
+              "shap_value": -0.0001264692355271942
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 2.0212219031398056e-05,
+              "baseline_penalty": 0.00035458664355125845,
+              "shap_value": -0.00033437442451986037
+            }
+          ]
+        },
+        "country": "United States of America",
+        "country_code": "US"
+      },
+      {
+        "position": 1280326,
+        "rotation": 0,
+        "score": 0.009684720501263537,
+        "usa": true,
+        "lat": 29.902409693107042,
+        "lon": -104.1058282864204,
+        "range": 312,
+        "slope": 1.2244398270292396,
+        "roughness": 16.619025242173485,
+        "bare": null,
+        "volcanic": null,
+        "error": 20.546766168913297,
+        "values": [
+          208,
+          108,
+          72,
+          28,
+          -6,
+          164,
+          70,
+          28,
+          0,
+          -24,
+          138,
+          86,
+          0,
+          -28,
+          -54,
+          104,
+          74,
+          -12,
+          -56,
+          -82,
+          62,
+          44,
+          -8,
+          -68,
+          -104
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.007060767693339473,
+          "score": 0.009684720501263537,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.008443392,
+              "baseline_penalty": 0.0059913472,
+              "shap_value": 0.002452044799999999
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 7.111111111111113e-05,
+              "baseline_penalty": 0.0004657777777777778,
+              "shap_value": -0.00039466666666666665
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 7.575120889849134e-06,
+              "baseline_penalty": 0.0002490560720104371,
+              "shap_value": -0.00024148095112058797
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 0.0011626422692625753,
+              "baseline_penalty": 0.00035458664355125845,
+              "shap_value": 0.0008080556257113169
+            }
+          ]
+        },
+        "country": "United States of America",
+        "country_code": "US"
+      },
+      {
+        "position": 716810,
+        "rotation": 0,
+        "score": 0.00969348575429984,
+        "usa": true,
+        "lat": 46.00024829480978,
+        "lon": -109.97870377767487,
+        "range": 298,
+        "slope": 1.295057835579966,
+        "roughness": 19.935736755886396,
+        "bare": null,
+        "volcanic": null,
+        "error": 19.76663856096934,
+        "values": [
+          150,
+          114,
+          60,
+          12,
+          6,
+          178,
+          110,
+          46,
+          -22,
+          -60,
+          144,
+          66,
+          0,
+          -48,
+          -72,
+          84,
+          20,
+          -48,
+          -70,
+          -84,
+          22,
+          -34,
+          -68,
+          -94,
+          -120
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.007060767693339473,
+          "score": 0.00969348575429984,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.007814400000000003,
+              "baseline_penalty": 0.0059913472,
+              "shap_value": 0.0018230528000000024
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 0.00144,
+              "baseline_penalty": 0.0004657777777777778,
+              "shap_value": 0.0009742222222222222
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 0.0004382200629135823,
+              "baseline_penalty": 0.0002490560720104371,
+              "shap_value": 0.00018916399090314519
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 8.656913862559383e-07,
+              "baseline_penalty": 0.00035458664355125845,
+              "shap_value": -0.0003537209521650025
+            }
+          ]
+        },
+        "country": "United States of America",
+        "country_code": "US"
+      }
+    ],
+    "criteria": {
+      "mean": 17.64,
+      "range": 316,
+      "slope": 1.2326455815898982,
+      "roughness": 20.028779293806206
+    },
+    "eligibleCount": 1356072,
+    "size": 5,
+    "query": [
+      224,
+      134,
+      58,
+      54,
+      42,
+      162,
+      116,
+      34,
+      8,
+      -6,
+      150,
+      86,
+      0,
+      -16,
+      -32,
+      100,
+      50,
+      -20,
+      -40,
+      -68,
+      48,
+      2,
+      -30,
+      -82,
+      -92
+    ],
+    "landCount": 1400048,
+    "step": 10000,
+    "earth": {
+      "label": "NOAA ETOPO 2022 · 60″",
+      "resolution": 1853,
+      "radius": 6371007.1809
+    },
+    "source": {
+      "lat": 18.509773880166733,
+      "lon": 77.45420248453411,
+      "label": "NASA MGS MOLA · MEGDR 32",
+      "resolution": 1853
+    },
+    "weights": {
+      "slope": 0.45,
+      "roughness": 0.25,
+      "profile": 0.2,
+      "range": 0.1
+    },
+    "request": {
+      "planet": "mars",
+      "lat": 18.4447,
+      "lon": 77.4508,
+      "weights": {
+        "slope": 0.45,
+        "roughness": 0.25,
+        "profile": 0.2,
+        "range": 0.1
+      }
+    }
+  },
+  {
+    "id": 1,
+    "kind": "results",
+    "matches": [
+      {
+        "position": 1182473,
+        "rotation": 0,
+        "score": 0.0004434768376389776,
+        "usa": false,
+        "lat": 32.51043941070134,
+        "lon": 53.58852867011039,
+        "range": 144,
+        "slope": 0.5678918050635541,
+        "roughness": 4.712196939857246,
+        "bare": null,
+        "volcanic": null,
+        "error": 4.436935879635856,
+        "values": [
+          20,
+          -2,
+          -22,
+          -42,
+          -58,
+          30,
+          8,
+          -10,
+          -28,
+          -46,
+          38,
+          18,
+          0,
+          -18,
+          -38,
+          54,
+          38,
+          16,
+          -4,
+          -24,
+          86,
+          64,
+          38,
+          14,
+          -6
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.0007074387224216609,
+          "score": 0.0004434768376389776,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.00039372800000000014,
+              "baseline_penalty": 0.0005492224000000001,
+              "shap_value": -0.00015549439999999992
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 0.0,
+              "baseline_penalty": 3.7333333333333344e-05,
+              "shap_value": -3.7333333333333344e-05
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 1.9309567664806313e-05,
+              "baseline_penalty": 6.366755082563405e-05,
+              "shap_value": -4.435798316082773e-05
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 3.0439269974171255e-05,
+              "baseline_penalty": 5.721543826269348e-05,
+              "shap_value": -2.6776168288522223e-05
+            }
+          ]
+        },
+        "country": "Iran",
+        "country_code": "IR"
+      },
+      {
+        "position": 690763,
+        "rotation": 0,
+        "score": 0.0005489845445192206,
+        "usa": false,
+        "lat": 46.899568887083674,
+        "lon": 94.30451571871507,
+        "range": 148,
+        "slope": 0.592007146894291,
+        "roughness": 5.495889372976871,
+        "bare": null,
+        "volcanic": null,
+        "error": 3.979145636942684,
+        "values": [
+          12,
+          -4,
+          -22,
+          -38,
+          -56,
+          26,
+          6,
+          -14,
+          -32,
+          -50,
+          44,
+          22,
+          0,
+          -20,
+          -38,
+          66,
+          40,
+          16,
+          -6,
+          -26,
+          92,
+          62,
+          34,
+          10,
+          -14
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.0007074387224216609,
+          "score": 0.0005489845445192206,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.000316672,
+              "baseline_penalty": 0.0005492224000000001,
+              "shap_value": -0.00023255040000000007
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 7.111111111111113e-05,
+              "baseline_penalty": 3.7333333333333344e-05,
+              "shap_value": 3.377777777777779e-05
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 0.00015582021746876265,
+              "baseline_penalty": 6.366755082563405e-05,
+              "shap_value": 9.21526666431286e-05
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 5.381215939346894e-06,
+              "baseline_penalty": 5.721543826269348e-05,
+              "shap_value": -5.183422232334659e-05
+            }
+          ]
+        },
+        "country": "Mongolia",
+        "country_code": "MN"
+      },
+      {
+        "position": 2427638,
+        "rotation": 0,
+        "score": 0.000572485657790541,
+        "usa": false,
+        "lat": 2.8328598656627726,
+        "lon": 35.701690480664176,
+        "range": 142,
+        "slope": 0.5838692904748537,
+        "roughness": 4.931206748859754,
+        "bare": null,
+        "volcanic": null,
+        "error": 4.735567547823598,
+        "values": [
+          16,
+          -10,
+          -26,
+          -42,
+          -54,
+          32,
+          8,
+          -14,
+          -32,
+          -44,
+          50,
+          24,
+          0,
+          -20,
+          -34,
+          64,
+          44,
+          16,
+          -6,
+          -20,
+          88,
+          60,
+          32,
+          8,
+          -6
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.0007074387224216609,
+          "score": 0.000572485657790541,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.0004485120000000001,
+              "baseline_penalty": 0.0005492224000000001,
+              "shap_value": -0.00010071039999999998
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 1.7777777777777783e-05,
+              "baseline_penalty": 3.7333333333333344e-05,
+              "shap_value": -1.955555555555556e-05
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 9.512640909976132e-05,
+              "baseline_penalty": 6.366755082563405e-05,
+              "shap_value": 3.1458858274127275e-05
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 1.1069470913001787e-05,
+              "baseline_penalty": 5.721543826269348e-05,
+              "shap_value": -4.614596734969169e-05
+            }
+          ]
+        },
+        "country": "Kenya",
+        "country_code": "KE"
+      },
+      {
+        "position": 5056133,
+        "rotation": 1,
+        "score": 0.0006335871348949264,
+        "usa": false,
+        "lat": -78.6455857943522,
+        "lon": -32.20385736898943,
+        "range": 140,
+        "slope": 0.5653470004789811,
+        "roughness": 4.770241084054351,
+        "bare": null,
+        "volcanic": null,
+        "error": 5.126246189952254,
+        "values": [
+          20,
+          0,
+          -16,
+          -32,
+          -56,
+          32,
+          8,
+          -12,
+          -26,
+          -42,
+          50,
+          30,
+          0,
+          -16,
+          -30,
+          66,
+          46,
+          14,
+          -2,
+          -24,
+          84,
+          62,
+          30,
+          12,
+          -12
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.0007074387224216609,
+          "score": 0.0006335871348949264,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.000525568,
+              "baseline_penalty": 0.0005492224000000001,
+              "shap_value": -2.3654400000000042e-05
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 7.111111111111113e-05,
+              "baseline_penalty": 3.7333333333333344e-05,
+              "shap_value": 3.377777777777779e-05
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 1.253664082693252e-05,
+              "baseline_penalty": 6.366755082563405e-05,
+              "shap_value": -5.113090999870152e-05
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 2.4371382956882657e-05,
+              "baseline_penalty": 5.721543826269348e-05,
+              "shap_value": -3.284405530581082e-05
+            }
+          ]
+        },
+        "country": "Antarctica",
+        "country_code": "AQ"
+      },
+      {
+        "position": 1247078,
+        "rotation": 3,
+        "score": 0.0006882865637077214,
+        "usa": false,
+        "lat": 30.801730285380938,
+        "lon": 33.137762634124286,
+        "range": 138,
+        "slope": 0.5634137010946639,
+        "roughness": 4.95225201297349,
+        "bare": null,
+        "volcanic": null,
+        "error": 5.0507821176526715,
+        "values": [
+          12,
+          -8,
+          -22,
+          -44,
+          -56,
+          24,
+          4,
+          -12,
+          -32,
+          -46,
+          48,
+          22,
+          0,
+          -18,
+          -34,
+          66,
+          42,
+          18,
+          -2,
+          -26,
+          82,
+          48,
+          26,
+          4,
+          -18
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.0007074387224216609,
+          "score": 0.0006882865637077214,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.0005102080000000002,
+              "baseline_penalty": 0.0005492224000000001,
+              "shap_value": -3.9014399999999895e-05
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 0.00016,
+              "baseline_penalty": 3.7333333333333344e-05,
+              "shap_value": 0.00012266666666666668
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 8.365188633503552e-06,
+              "baseline_penalty": 6.366755082563405e-05,
+              "shap_value": -5.5302362192130495e-05
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 9.713375074217726e-06,
+              "baseline_penalty": 5.721543826269348e-05,
+              "shap_value": -4.750206318847575e-05
+            }
+          ]
+        },
+        "country": "Egypt",
+        "country_code": "EG"
+      },
+      {
+        "position": 2918886,
+        "rotation": 0,
+        "score": 0.0007022478956989447,
+        "usa": false,
+        "lat": -8.228783419306147,
+        "lon": 39.11849778417634,
+        "range": 146,
+        "slope": 0.5597778000311865,
+        "roughness": 6.673170161175268,
+        "bare": null,
+        "volcanic": null,
+        "error": 4.914631217090454,
+        "values": [
+          4,
+          -6,
+          -20,
+          -36,
+          -52,
+          24,
+          8,
+          -8,
+          -30,
+          -42,
+          44,
+          28,
+          0,
+          -20,
+          -30,
+          64,
+          44,
+          14,
+          -6,
+          -16,
+          94,
+          62,
+          28,
+          12,
+          0
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.0007074387224216609,
+          "score": 0.0007022478956989447,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.00048307199999999997,
+              "baseline_penalty": 0.0005492224000000001,
+              "shap_value": -6.615040000000009e-05
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 1.7777777777777783e-05,
+              "baseline_penalty": 3.7333333333333344e-05,
+              "shap_value": -1.955555555555556e-05
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 2.798076813187533e-06,
+              "baseline_penalty": 6.366755082563405e-05,
+              "shap_value": -6.086947401244651e-05
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 0.00019860004110797927,
+              "baseline_penalty": 5.721543826269348e-05,
+              "shap_value": 0.0001413846028452858
+            }
+          ]
+        },
+        "country": "United Republic of Tanzania",
+        "country_code": "TZ"
+      },
+      {
+        "position": 4990580,
+        "rotation": 3,
+        "score": 0.0007222263750573078,
+        "usa": false,
+        "lat": -72.7100698853445,
+        "lon": -7.413469228101115,
+        "range": 144,
+        "slope": 0.5870920304712163,
+        "roughness": 5.0075143534492135,
+        "bare": null,
+        "volcanic": null,
+        "error": 5.469332683243906,
+        "values": [
+          18,
+          2,
+          -16,
+          -32,
+          -54,
+          32,
+          10,
+          -10,
+          -30,
+          -46,
+          56,
+          28,
+          0,
+          -14,
+          -32,
+          68,
+          48,
+          16,
+          6,
+          -14,
+          90,
+          68,
+          40,
+          22,
+          4
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.0007074387224216609,
+          "score": 0.0007222263750573078,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.0005982719999999998,
+              "baseline_penalty": 0.0005492224000000001,
+              "shap_value": 4.904959999999978e-05
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 0.0,
+              "baseline_penalty": 3.7333333333333344e-05,
+              "shap_value": -3.7333333333333344e-05
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 0.0001173802513927542,
+              "baseline_penalty": 6.366755082563405e-05,
+              "shap_value": 5.371270056712016e-05
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 6.574123664553778e-06,
+              "baseline_penalty": 5.721543826269348e-05,
+              "shap_value": -5.06413145981397e-05
+            }
+          ]
+        },
+        "country": "Antarctica",
+        "country_code": "AQ"
+      },
+      {
+        "position": 1150666,
+        "rotation": 2,
+        "score": 0.0008957583687866086,
+        "usa": true,
+        "lat": 33.319827943747846,
+        "lon": -111.44413318163815,
+        "range": 142,
+        "slope": 0.5549655473971343,
+        "roughness": 6.917109222789532,
+        "bare": null,
+        "volcanic": null,
+        "error": 5.498508888780667,
+        "values": [
+          18,
+          -2,
+          -18,
+          -34,
+          -50,
+          26,
+          10,
+          -8,
+          -26,
+          -44,
+          42,
+          20,
+          0,
+          -18,
+          -38,
+          54,
+          36,
+          14,
+          -8,
+          -30,
+          92,
+          60,
+          36,
+          6,
+          -24
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.0007074387224216609,
+          "score": 0.0008957583687866086,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.0006046720000000001,
+              "baseline_penalty": 0.0005492224000000001,
+              "shap_value": 5.5449600000000046e-05
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 1.7777777777777783e-05,
+              "baseline_penalty": 3.7333333333333344e-05,
+              "shap_value": -1.955555555555556e-05
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 3.4417805373751706e-09,
+              "baseline_penalty": 6.366755082563405e-05,
+              "shap_value": -6.366410904509667e-05
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 0.00027330514922829335,
+              "baseline_penalty": 5.721543826269348e-05,
+              "shap_value": 0.00021608971096559988
+            }
+          ]
+        },
+        "country": "United States of America",
+        "country_code": "US"
+      },
+      {
+        "position": 959560,
+        "rotation": 1,
+        "score": 0.0009062249723008396,
+        "usa": true,
+        "lat": 38.62581943816384,
+        "lon": -104.12117338669032,
+        "range": 146,
+        "slope": 0.5978860870416651,
+        "roughness": 5.5730781440780195,
+        "bare": null,
+        "volcanic": null,
+        "error": 5.787711119259495,
+        "values": [
+          12,
+          -12,
+          -28,
+          -40,
+          -56,
+          26,
+          8,
+          -6,
+          -32,
+          -48,
+          52,
+          28,
+          0,
+          -20,
+          -30,
+          72,
+          46,
+          16,
+          -4,
+          -20,
+          90,
+          62,
+          32,
+          10,
+          -4
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.0007074387224216609,
+          "score": 0.0009062249723008396,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.0006699520000000001,
+              "baseline_penalty": 0.0005492224000000001,
+              "shap_value": 0.00012072960000000007
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 1.7777777777777783e-05,
+              "baseline_penalty": 3.7333333333333344e-05,
+              "shap_value": -1.955555555555556e-05
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 0.00020893700293696008,
+              "baseline_penalty": 6.366755082563405e-05,
+              "shap_value": 0.00014526945211132603
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 9.558191586101696e-06,
+              "baseline_penalty": 5.721543826269348e-05,
+              "shap_value": -4.765724667659178e-05
+            }
+          ]
+        },
+        "country": "United States of America",
+        "country_code": "US"
+      },
+      {
+        "position": 702993,
+        "rotation": 0,
+        "score": 0.0009611088738215214,
+        "usa": true,
+        "lat": 46.44990859094673,
+        "lon": -104.8789810848614,
+        "range": 144,
+        "slope": 0.5427172645314262,
+        "roughness": 5.4411763434022244,
+        "bare": null,
+        "volcanic": null,
+        "error": 6.861370125565302,
+        "values": [
+          -12,
+          -14,
+          -26,
+          -48,
+          -76,
+          24,
+          4,
+          -16,
+          -34,
+          -46,
+          42,
+          20,
+          0,
+          -20,
+          -36,
+          48,
+          28,
+          10,
+          -10,
+          -28,
+          68,
+          50,
+          20,
+          4,
+          -16
+        ],
+        "explanation": {
+          "method": "exact_interventional_shap_additive_score",
+          "background": "mean of the returned shortlist",
+          "background_size": 10,
+          "baseline_score": 0.0007074387224216609,
+          "score": 0.0009611088738215214,
+          "features": [
+            {
+              "feature": "profile",
+              "weight": 0.2,
+              "penalty": 0.0009415680000000003,
+              "baseline_penalty": 0.0005492224000000001,
+              "shap_value": 0.0003923456000000002
+            },
+            {
+              "feature": "range",
+              "weight": 0.1,
+              "penalty": 0.0,
+              "baseline_penalty": 3.7333333333333344e-05,
+              "shap_value": -3.7333333333333344e-05
+            },
+            {
+              "feature": "slope",
+              "weight": 0.45,
+              "penalty": 1.639871163913491e-05,
+              "baseline_penalty": 6.366755082563405e-05,
+              "shap_value": -4.7268839186499135e-05
+            },
+            {
+              "feature": "roughness",
+              "weight": 0.25,
+              "penalty": 3.1421621823862957e-06,
+              "baseline_penalty": 5.721543826269348e-05,
+              "shap_value": -5.4073276080307184e-05
+            }
+          ]
+        },
+        "country": "United States of America",
+        "country_code": "US"
+      }
+    ],
+    "criteria": {
+      "mean": 1.24,
+      "range": 144,
+      "slope": 0.5547906371207734,
+      "roughness": 5.263914892929024
+    },
+    "eligibleCount": 1356072,
+    "size": 5,
+    "query": [
+      8,
+      -4,
+      -28,
+      -42,
+      -56,
+      24,
+      4,
+      -16,
+      -30,
+      -44,
+      38,
+      22,
+      0,
+      -24,
+      -36,
+      58,
+      30,
+      14,
+      -2,
+      -26,
+      88,
+      52,
+      32,
+      12,
+      -12
+    ],
+    "landCount": 1400048,
+    "step": 10000,
+    "earth": {
+      "label": "NOAA ETOPO 2022 · 60″",
+      "resolution": 1853,
+      "radius": 6371007.1809
+    },
+    "source": {
+      "lat": 0.8244471554202015,
+      "lon": 23.581629920071478,
+      "label": "NASA LRO LOLA · LDEM_64",
+      "resolution": 474
+    },
+    "weights": {
+      "slope": 0.45,
+      "roughness": 0.25,
+      "profile": 0.2,
+      "range": 0.1
+    },
+    "request": {
+      "planet": "moon",
+      "lat": 0.67416,
+      "lon": 23.47314,
+      "weights": {
+        "slope": 0.45,
+        "roughness": 0.25,
+        "profile": 0.2,
+        "range": 0.1
+      }
+    }
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "body": "mars",
+  "location": "Jezero",
+  "candidate_index": 0,
+  "candidate": {
+    "position": 1213075,
+    "rotation": 3,
+    "score": 0.005118009203404722,
+    "usa": false,
+    "lat": 31.701050877654833,
+    "lon": 59.35209675822028,
+    "range": 326,
+    "slope": 1.203896020696468,
+    "roughness": 17.779718782927922,
+    "bare": null,
+    "volcanic": null,
+    "error": 14.27366806395609,
+    "values": [
+      214,
+      120,
+      58,
+      18,
+      12,
+      148,
+      76,
+      22,
+      -16,
+      -26,
+      98,
+      38,
+      0,
+      -40,
+      -52,
+      56,
+      6,
+      -30,
+      -62,
+      -86,
+      10,
+      -28,
+      -60,
+      -90,
+      -112
+    ],
+    "explanation": {
+      "method": "exact_interventional_shap_additive_score",
+      "background": "mean of the returned shortlist",
+      "background_size": 10,
+      "baseline_score": 0.007060767693339473,
+      "score": 0.005118009203404722,
+      "features": [
+        {
+          "feature": "profile",
+          "weight": 0.2,
+          "penalty": 0.004074751999999999,
+          "baseline_penalty": 0.0059913472,
+          "shap_value": -0.001916595200000001
+        },
+        {
+          "feature": "range",
+          "weight": 0.1,
+          "penalty": 0.00044444444444444447,
+          "baseline_penalty": 0.0004657777777777778,
+          "shap_value": -2.1333333333333328e-05
+        },
+        {
+          "feature": "slope",
+          "weight": 0.45,
+          "penalty": 9.298544080106877e-05,
+          "baseline_penalty": 0.0002490560720104371,
+          "shap_value": -0.00015607063120936832
+        },
+        {
+          "feature": "roughness",
+          "weight": 0.25,
+          "penalty": 0.0005058273181592086,
+          "baseline_penalty": 0.00035458664355125845,
+          "shap_value": 0.0001512406746079502
+        }
+      ]
+    },
+    "country": "Iran",
+    "country_code": "IR"
+  },
+  "selection_note": "First actual shortlist candidate with both positive and negative SHAP contributions, chosen for explanation readability."
+}

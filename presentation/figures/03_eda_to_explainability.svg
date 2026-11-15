@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="648pt" viewBox="0 0 1152 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-15T21:38:23.569460</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 1152 648 
+L 1152 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 105.12 447.12 
+L 338.4 447.12 
+L 338.4 213.84 
+L 105.12 213.84 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g clip-path="url(#p2bcc2bbc23)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAUQAAAFECAYAAABf6kfGAAAECElEQVR4nO3WoVFDURRFUQJfIRlEPI4iKIzyUgQuPoo4VOBjdgNPXZhZq4Kj9pzD8/t1v+PfeD0+TE9gwel8m57AgvvpAQB/hSACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAGy/ezTE1hxOt+mJ7Dg7WWbnsACDxEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBMj2+bVPb2DB0+NhegILPi7f0xNY4CECRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAD5BamPEqAxIskbAAAAAElFTkSuQmCC" id="image6738829d4d" transform="scale(1 -1) translate(0 -233.28)" x="105.12" y="-213.84" width="233.28" height="233.28"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="fill: #71717a; font: 11px 'Arial'" transform="translate(102.519344 476.667802) rotate(-25)">Перепад</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="fill: #71717a; font: 11px 'Arial'" transform="translate(186.641058 473.701286) rotate(-25)">Наклон</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="fill: #71717a; font: 11px 'Arial'" transform="translate(243.67564 483.365708) rotate(-25)">Неровность</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="fill: #71717a; font: 11px 'Arial'; text-anchor: end" x="101.62" y="256.656797" transform="rotate(-0 101.62 256.656797)">Перепад</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_5"/>
+     <g id="text_5">
+      <text style="fill: #71717a; font: 11px 'Arial'; text-anchor: end" x="101.62" y="334.416797" transform="rotate(-0 101.62 334.416797)">Наклон</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_6"/>
+     <g id="text_6">
+      <text style="fill: #71717a; font: 11px 'Arial'; text-anchor: end" x="101.62" y="412.176797" transform="rotate(-0 101.62 412.176797)">Неровность</text>
+     </g>
+    </g>
+   </g>
+   <g id="text_7">
+    <text style="fill: #ffffff; font: 15px 'Arial'; text-anchor: middle" x="144" y="256.597734" transform="rotate(-0 144 256.597734)">1,00</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #ffffff; font: 15px 'Arial'; text-anchor: middle" x="221.76" y="256.597734" transform="rotate(-0 221.76 256.597734)">0,95</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #ffffff; font: 15px 'Arial'; text-anchor: middle" x="299.52" y="256.597734" transform="rotate(-0 299.52 256.597734)">0,95</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #ffffff; font: 15px 'Arial'; text-anchor: middle" x="144" y="334.357734" transform="rotate(-0 144 334.357734)">0,95</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: #ffffff; font: 15px 'Arial'; text-anchor: middle" x="221.76" y="334.357734" transform="rotate(-0 221.76 334.357734)">1,00</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: #ffffff; font: 15px 'Arial'; text-anchor: middle" x="299.52" y="334.357734" transform="rotate(-0 299.52 334.357734)">0,85</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: #ffffff; font: 15px 'Arial'; text-anchor: middle" x="144" y="412.117734" transform="rotate(-0 144 412.117734)">0,95</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: #ffffff; font: 15px 'Arial'; text-anchor: middle" x="221.76" y="412.117734" transform="rotate(-0 221.76 412.117734)">0,85</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: #ffffff; font: 15px 'Arial'; text-anchor: middle" x="299.52" y="412.117734" transform="rotate(-0 299.52 412.117734)">1,00</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: #18181b; font: 500 15px 'Arial'; text-anchor: start" x="105.12" y="195.84" transform="rotate(-0 105.12 195.84)">Земля · Spearman ρ</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_3">
+    <path d="M 433.44 447.12 
+L 666.72 447.12 
+L 666.72 213.84 
+L 433.44 213.84 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g clip-path="url(#p3c4ac1b251)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAUQAAAFECAYAAABf6kfGAAAEAElEQVR4nO3WsbFBUQBFUc8Qy0W/g5+rQx86UJFmNEIBApJdgBtdzFoVnGjPWfbn+3PF1zj8bWZPYMDl+pg9gQHr2QMAPoUgAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABspk9gDGX62P2BAYc/7ezJzDAQwSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQAbKsTrfn7BG8b79bZk+An+UhAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAeQHpig1rsv0MywAAAABJRU5ErkJggg==" id="image2033baf17d" transform="scale(1 -1) translate(0 -233.28)" x="433.44" y="-213.84" width="233.28" height="233.28"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_4">
+     <g id="line2d_7"/>
+     <g id="text_17">
+      <text style="fill: #71717a; font: 11px 'Arial'" transform="translate(430.839344 476.667802) rotate(-25)">Перепад</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_8"/>
+     <g id="text_18">
+      <text style="fill: #71717a; font: 11px 'Arial'" transform="translate(514.961058 473.701286) rotate(-25)">Наклон</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_9"/>
+     <g id="text_19">
+      <text style="fill: #71717a; font: 11px 'Arial'" transform="translate(571.99564 483.365708) rotate(-25)">Неровность</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_4">
+     <g id="line2d_10"/>
+     <g id="text_20">
+      <text style="fill: #71717a; font: 11px 'Arial'; text-anchor: end" x="429.94" y="256.656797" transform="rotate(-0 429.94 256.656797)">Перепад</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_11"/>
+     <g id="text_21">
+      <text style="fill: #71717a; font: 11px 'Arial'; text-anchor: end" x="429.94" y="334.416797" transform="rotate(-0 429.94 334.416797)">Наклон</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_12"/>
+     <g id="text_22">
+      <text style="fill: #71717a; font: 11px 'Arial'; text-anchor: end" x="429.94" y="412.176797" transform="rotate(-0 429.94 412.176797)">Неровность</text>
+     </g>
+    </g>
+   </g>
+   <g id="text_23">
+    <text style="fill: #ffffff; font: 15px 'Arial'; text-anchor: middle" x="472.32" y="256.597734" transform="rotate(-0 472.32 256.597734)">1,00</text>
+   </g>
+   <g id="text_24">
+    <text style="fill: #ffffff; font: 15px 'Arial'; text-anchor: middle" x="550.08" y="256.597734" transform="rotate(-0 550.08 256.597734)">0,93</text>
+   </g>
+   <g id="text_25">
+    <text style="fill: #ffffff; font: 15px 'Arial'; text-anchor: middle" x="627.84" y="256.597734" transform="rotate(-0 627.84 256.597734)">0,94</text>
+   </g>
+   <g id="text_26">
+    <text style="fill: #ffffff; font: 15px 'Arial'; text-anchor: middle" x="472.32" y="334.357734" transform="rotate(-0 472.32 334.357734)">0,93</text>
+   </g>
+   <g id="text_27">
+    <text style="fill: #ffffff; font: 15px 'Arial'; text-anchor: middle" x="550.08" y="334.357734" transform="rotate(-0 550.08 334.357734)">1,00</text>
+   </g>
+   <g id="text_28">
+    <text style="fill: #ffffff; font: 15px 'Arial'; text-anchor: middle" x="627.84" y="334.357734" transform="rotate(-0 627.84 334.357734)">0,80</text>
+   </g>
+   <g id="text_29">
+    <text style="fill: #ffffff; font: 15px 'Arial'; text-anchor: middle" x="472.32" y="412.117734" transform="rotate(-0 472.32 412.117734)">0,94</text>
+   </g>
+   <g id="text_30">
+    <text style="fill: #ffffff; font: 15px 'Arial'; text-anchor: middle" x="550.08" y="412.117734" transform="rotate(-0 550.08 412.117734)">0,80</text>
+   </g>
+   <g id="text_31">
+    <text style="fill: #ffffff; font: 15px 'Arial'; text-anchor: middle" x="627.84" y="412.117734" transform="rotate(-0 627.84 412.117734)">1,00</text>
+   </g>
+   <g id="text_32">
+    <text style="fill: #18181b; font: 500 15px 'Arial'; text-anchor: start" x="433.44" y="195.84" transform="rotate(-0 433.44 195.84)">Марс · Spearman ρ</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_4">
+    <path d="M 875.52 417.96 
+L 1071.36 417.96 
+L 1071.36 236.52 
+L 875.52 236.52 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 959.451429 244.767273 
+L 912.822857 244.767273 
+L 912.822857 267.51837 
+L 959.451429 267.51837 
+z
+" clip-path="url(#pf907c7e3b6)" style="fill: #006fee"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 959.451429 292.165392 
+L 955.654408 292.165392 
+L 955.654408 314.916489 
+L 959.451429 314.916489 
+z
+" clip-path="url(#pf907c7e3b6)" style="fill: #006fee"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 959.451429 339.563511 
+L 963.130941 339.563511 
+L 963.130941 362.314608 
+L 959.451429 362.314608 
+z
+" clip-path="url(#pf907c7e3b6)" style="fill: #c84045"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 959.451429 386.96163 
+L 958.932413 386.96163 
+L 958.932413 409.712727 
+L 959.451429 409.712727 
+z
+" clip-path="url(#pf907c7e3b6)" style="fill: #006fee"/>
+   </g>
+   <g id="matplotlib.axis_5"/>
+   <g id="matplotlib.axis_6">
+    <g id="ytick_7">
+     <g id="line2d_13"/>
+     <g id="text_33">
+      <text style="fill: #71717a; font: 10px 'Arial'; text-anchor: end" x="866.52" y="259.751415" transform="rotate(-0 866.52 259.751415)">Форма рельефа</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_14"/>
+     <g id="text_34">
+      <text style="fill: #71717a; font: 10px 'Arial'; text-anchor: end" x="866.52" y="307.119847" transform="rotate(-0 866.52 307.119847)">Наклон плоскости</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_15"/>
+     <g id="text_35">
+      <text style="fill: #71717a; font: 10px 'Arial'; text-anchor: end" x="866.52" y="354.517966" transform="rotate(-0 866.52 354.517966)">Неровность</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_16"/>
+     <g id="text_36">
+      <text style="fill: #71717a; font: 10px 'Arial'; text-anchor: end" x="866.52" y="401.916085" transform="rotate(-0 866.52 401.916085)">Перепад высот</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_17">
+    <path d="M 959.451429 417.96 
+L 959.451429 236.52 
+" clip-path="url(#pf907c7e3b6)" style="fill: none; stroke: #a1a1aa; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_37">
+    <text style="fill: #006fee; font: 9px 'Arial'; text-anchor: end" x="1069.4016" y="258.469462" transform="rotate(-0 1069.4016 258.469462)">-1,917</text>
+   </g>
+   <g id="text_38">
+    <text style="fill: #006fee; font: 9px 'Arial'; text-anchor: end" x="1069.4016" y="305.867581" transform="rotate(-0 1069.4016 305.867581)">-0,156</text>
+   </g>
+   <g id="text_39">
+    <text style="fill: #c84045; font: 9px 'Arial'; text-anchor: end" x="1069.4016" y="353.2657" transform="rotate(-0 1069.4016 353.2657)">+0,151</text>
+   </g>
+   <g id="text_40">
+    <text style="fill: #006fee; font: 9px 'Arial'; text-anchor: end" x="1069.4016" y="400.663819" transform="rotate(-0 1069.4016 400.663819)">-0,021</text>
+   </g>
+  </g>
+  <g id="line2d_18">
+   <path d="M 63.36 134.784 
+L 1088.64 134.784 
+" style="fill: none; stroke: #e4e4e7; stroke-width: 0.8; stroke-linecap: square"/>
+  </g>
+  <g id="line2d_19">
+   <path d="M 63.36 550.152 
+L 1088.64 550.152 
+" style="fill: none; stroke: #e4e4e7; stroke-width: 0.8; stroke-linecap: square"/>
+  </g>
+  <g id="text_41">
+   <text style="fill: #006fee; font: 700 11px 'Arial'; text-anchor: start" x="63.36" y="37.584" transform="rotate(-0 63.36 37.584)">EDA → ОБЪЯСНИМЫЙ МЕТОД</text>
+  </g>
+  <g id="text_42">
+   <text style="fill: #18181b; font: 700 29px 'Arial'; text-anchor: start" x="63.36" y="82.944" transform="rotate(-0 63.36 82.944)">От связей в данных — к объяснению рекомендации.</text>
+  </g>
+  <g id="text_43">
+   <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: start" x="63.36" y="116.64" transform="rotate(-0 63.36 116.64)">Слева — статистика всех окон; справа — локальное объяснение одного реального кандидата</text>
+  </g>
+  <g id="text_44">
+   <text style="fill: #71717a; font: 11px 'Arial'; text-anchor: end" x="1088.64" y="37.584" transform="rotate(-0 1088.64 37.584)">03 / 08</text>
+  </g>
+  <g id="text_45">
+   <text style="fill: #18181b; font: 700 15px 'Arial'; text-anchor: start" x="812.16" y="184.68" transform="rotate(-0 812.16 184.68)">Пример Exact SHAP</text>
+  </g>
+  <g id="text_46">
+   <text style="fill: #71717a; font: 11px 'Arial'; text-anchor: start" x="812.16" y="213.84" transform="rotate(-0 812.16 213.84)">Jezero → кандидат №01</text>
+  </g>
+  <g id="text_47">
+   <!-- Вклад в балл $\times10^{-3}$ -->
+   <g style="fill: #71717a" transform="translate(812.16 234.576)">
+    <text>
+     <tspan style="font: 10px 'Arial'" x="0 6.669922 11.044922 16.879883 22.441406 28.276367 31.054688 36.367188 39.145508 44.873047 50.43457 56.269531 62.104492" y="-0.9765625">Вклад в балл </tspan>
+     <tspan style="font: 10px 'DejaVu Sans'" x="64.882812 73.261719 79.624023" y="-0.9765625">×10</tspan>
+     <tspan style="font: 7px 'DejaVu Sans'" x="86.082031 91.947266" y="-4.8046875">−3</tspan>
+    </text>
+   </g>
+  </g>
+  <g id="text_48">
+   <text style="fill: #71717a; font: 11px 'Arial'" transform="translate(817.92 462.146719)">Синий: уменьшает несовпадение</text>
+   <text style="fill: #71717a; font: 11px 'Arial'" transform="translate(817.92 476.28)">Красный: увеличивает</text>
+  </g>
+  <g id="text_49">
+   <text style="fill: #18181b; font: 500 15px 'Arial'; text-anchor: start" x="63.36" y="581.904" transform="rotate(-0 63.36 581.904)">SHAP показывает вклад каждого критерия в конкретную рекомендацию.</text>
+  </g>
+  <g id="text_50">
+   <text style="fill: #71717a; font: 9.5px 'Arial'" transform="translate(63.36 608.484703)">Корреляции: полный production-атлас. SHAP: четыре слагаемых действующего score; фон — среднее десяти рекомендаций.</text>
+   <text style="fill: #71717a; font: 9.5px 'Arial'" transform="translate(63.36 618.84)">Корреляция описывает данные, SHAP объясняет вычисленный балл. Это разные задачи; ни одна диаграмма не доказывает причинность.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2bcc2bbc23">
+   <rect x="105.12" y="213.84" width="233.28" height="233.28"/>
+  </clipPath>
+  <clipPath id="p3c4ac1b251">
+   <rect x="433.44" y="213.84" width="233.28" height="233.28"/>
+  </clipPath>
+  <clipPath id="pf907c7e3b6">
+   <rect x="875.52" y="236.52" width="195.84" height="181.44"/>
+  </clipPath>
+ </defs>
+</svg>

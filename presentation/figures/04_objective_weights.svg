@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="648pt" viewBox="0 0 1152 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-15T21:38:24.035261</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 1152 648 
+L 1152 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 311.04 460.08 
+L 1048.32 460.08 
+L 1048.32 187.92 
+L 311.04 187.92 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g clip-path="url(#p7565b5e7b5)">
+    <image xlink:href="data:image/png;base64,
+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" id="image10903ba2ff" transform="scale(1 -1) translate(0 -272.16)" x="311.04" y="-187.92" width="737.28" height="272.16"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: middle" x="403.2" y="484.462344" transform="rotate(-0 403.2 484.462344)">Форма рельефа</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: middle" x="587.52" y="484.385156" transform="rotate(-0 587.52 484.385156)">Перепад высот</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: middle" x="771.84" y="484.385156" transform="rotate(-0 771.84 484.385156)">Наклон плоскости</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: middle" x="956.16" y="484.385156" transform="rotate(-0 956.16 484.385156)">Неровность</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_5"/>
+     <g id="text_5">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: end" x="296.04" y="219.788578" transform="rotate(-0 296.04 219.788578)">Ровер</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_6"/>
+     <g id="text_6">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: end" x="296.04" y="274.220578" transform="rotate(-0 296.04 274.220578)">Подготовка астронавтов</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_7"/>
+     <g id="text_7">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: end" x="296.04" y="328.652578" transform="rotate(-0 296.04 328.652578)">Посадочные сенсоры</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_8"/>
+     <g id="text_8">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: end" x="296.04" y="383.196297" transform="rotate(-0 296.04 383.196297)">Земляные работы</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_9"/>
+     <g id="text_9">
+      <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: end" x="296.04" y="437.516578" transform="rotate(-0 296.04 437.516578)">Геологическая практика</text>
+     </g>
+    </g>
+   </g>
+   <g id="text_10">
+    <text style="fill: #18181b; font: 18px 'Arial'; text-anchor: middle" x="403.2" y="219.789281" transform="rotate(-0 403.2 219.789281)">20%</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: #18181b; font: 18px 'Arial'; text-anchor: middle" x="587.52" y="219.789281" transform="rotate(-0 587.52 219.789281)">10%</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: #ffffff; font: 18px 'Arial'; text-anchor: middle" x="771.84" y="219.789281" transform="rotate(-0 771.84 219.789281)">45%</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: #18181b; font: 18px 'Arial'; text-anchor: middle" x="956.16" y="219.789281" transform="rotate(-0 956.16 219.789281)">25%</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: #18181b; font: 18px 'Arial'; text-anchor: middle" x="403.2" y="274.221281" transform="rotate(-0 403.2 274.221281)">20%</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: #18181b; font: 18px 'Arial'; text-anchor: middle" x="587.52" y="274.221281" transform="rotate(-0 587.52 274.221281)">25%</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: #ffffff; font: 18px 'Arial'; text-anchor: middle" x="771.84" y="274.221281" transform="rotate(-0 771.84 274.221281)">45%</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: #18181b; font: 18px 'Arial'; text-anchor: middle" x="956.16" y="274.221281" transform="rotate(-0 956.16 274.221281)">10%</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: #ffffff; font: 18px 'Arial'; text-anchor: middle" x="403.2" y="328.653281" transform="rotate(-0 403.2 328.653281)">45%</text>
+   </g>
+   <g id="text_19">
+    <text style="fill: #18181b; font: 18px 'Arial'; text-anchor: middle" x="587.52" y="328.653281" transform="rotate(-0 587.52 328.653281)">25%</text>
+   </g>
+   <g id="text_20">
+    <text style="fill: #18181b; font: 18px 'Arial'; text-anchor: middle" x="771.84" y="328.653281" transform="rotate(-0 771.84 328.653281)">20%</text>
+   </g>
+   <g id="text_21">
+    <text style="fill: #18181b; font: 18px 'Arial'; text-anchor: middle" x="956.16" y="328.653281" transform="rotate(-0 956.16 328.653281)">10%</text>
+   </g>
+   <g id="text_22">
+    <text style="fill: #18181b; font: 18px 'Arial'; text-anchor: middle" x="403.2" y="383.085281" transform="rotate(-0 403.2 383.085281)">10%</text>
+   </g>
+   <g id="text_23">
+    <text style="fill: #18181b; font: 18px 'Arial'; text-anchor: middle" x="587.52" y="383.085281" transform="rotate(-0 587.52 383.085281)">20%</text>
+   </g>
+   <g id="text_24">
+    <text style="fill: #ffffff; font: 18px 'Arial'; text-anchor: middle" x="771.84" y="383.085281" transform="rotate(-0 771.84 383.085281)">45%</text>
+   </g>
+   <g id="text_25">
+    <text style="fill: #18181b; font: 18px 'Arial'; text-anchor: middle" x="956.16" y="383.085281" transform="rotate(-0 956.16 383.085281)">25%</text>
+   </g>
+   <g id="text_26">
+    <text style="fill: #ffffff; font: 18px 'Arial'; text-anchor: middle" x="403.2" y="437.517281" transform="rotate(-0 403.2 437.517281)">45%</text>
+   </g>
+   <g id="text_27">
+    <text style="fill: #18181b; font: 18px 'Arial'; text-anchor: middle" x="587.52" y="437.517281" transform="rotate(-0 587.52 437.517281)">25%</text>
+   </g>
+   <g id="text_28">
+    <text style="fill: #18181b; font: 18px 'Arial'; text-anchor: middle" x="771.84" y="437.517281" transform="rotate(-0 771.84 437.517281)">10%</text>
+   </g>
+   <g id="text_29">
+    <text style="fill: #18181b; font: 18px 'Arial'; text-anchor: middle" x="956.16" y="437.517281" transform="rotate(-0 956.16 437.517281)">20%</text>
+   </g>
+  </g>
+  <g id="line2d_10">
+   <path d="M 63.36 134.784 
+L 1088.64 134.784 
+" style="fill: none; stroke: #e4e4e7; stroke-width: 0.8; stroke-linecap: square"/>
+  </g>
+  <g id="line2d_11">
+   <path d="M 63.36 550.152 
+L 1088.64 550.152 
+" style="fill: none; stroke: #e4e4e7; stroke-width: 0.8; stroke-linecap: square"/>
+  </g>
+  <g id="text_30">
+   <text style="fill: #006fee; font: 700 11px 'Arial'; text-anchor: start" x="63.36" y="37.584" transform="rotate(-0 63.36 37.584)">МЕТОД / ПРИОРИТЕТЫ</text>
+  </g>
+  <g id="text_31">
+   <text style="fill: #18181b; font: 700 29px 'Arial'; text-anchor: start" x="63.36" y="82.944" transform="rotate(-0 63.36 82.944)">Задача испытаний задаёт веса критериев.</text>
+  </g>
+  <g id="text_32">
+   <text style="fill: #71717a; font: 13px 'Arial'; text-anchor: start" x="63.36" y="116.64" transform="rotate(-0 63.36 116.64)">Цель исследования меняет веса четырёх критериев, сохраняя общую формулу сравнения</text>
+  </g>
+  <g id="text_33">
+   <text style="fill: #71717a; font: 11px 'Arial'; text-anchor: end" x="1088.64" y="37.584" transform="rotate(-0 1088.64 37.584)">04 / 08</text>
+  </g>
+  <g id="text_34">
+   <text style="fill: #71717a; font: 12px 'Arial'; text-anchor: start" x="311.04" y="518.4" transform="rotate(-0 311.04 518.4)">Нормировки различий: профиль 100 м  ·  перепад 150 м  ·  наклон 2°  ·  неровность 50 м</text>
+  </g>
+  <g id="text_35">
+   <text style="fill: #18181b; font: 500 15px 'Arial'; text-anchor: start" x="63.36" y="581.904" transform="rotate(-0 63.36 581.904)">Ранжируем кандидатов под задачу пользователя.</text>
+  </g>
+  <g id="text_36">
+   <text style="fill: #71717a; font: 9.5px 'Arial'" transform="translate(63.36 608.484703)">Действующий поиск: взвешенная сумма квадратов нормированных различий. Меньший балл — ближе рельеф.</text>
+   <text style="fill: #71717a; font: 9.5px 'Arial'" transform="translate(63.36 618.84)">Веса и нормировки заданы разработчиками; они не являются обученными вероятностями или пределами безопасности.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p7565b5e7b5">
+   <rect x="311.04" y="187.92" width="737.28" height="272.16"/>
+  </clipPath>
+ </defs>
+</svg>
