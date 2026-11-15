@@ -1,0 +1,121 @@
+{
+  "date": "2026-11-15",
+  "environment": "Local production builds; Python 3.12, Node 22.23.5, headless Chrome with software WebGL",
+  "unit_checks": {
+    "api_passed": 33,
+    "ml_passed": 3,
+    "web_model_passed": 3
+  },
+  "search_regression": {
+    "full_responses_compared": 8,
+    "all_equal": true
+  },
+  "loading": {
+    "initial_unique_javascript_encoded_bytes_before": 1250687,
+    "initial_unique_javascript_encoded_bytes_after": 325124,
+    "reduction_fraction": 0.74,
+    "note": "First visit, includes guide assets after change; all reported JS resources deduplicated by filename. Browser receives Brotli. Not a page-load-time guarantee."
+  },
+  "repeated_search": {
+    "median_seconds_before": 0.89845,
+    "median_seconds_after": 0.00275,
+    "note": "Four identical repeated requests on localhost, warm worker and bounded result cache. First-time loading and new atlas cells are not covered by this speedup."
+  },
+  "browser_checks": {
+    "base": "http://127.0.0.1:3002",
+    "errors": [],
+    "checks": [
+      {
+        "viewport": "desktop",
+        "firstVisit": true,
+        "oneYearCookie": true,
+        "reopenAndEscape": true,
+        "returnVisitSkipsIntro": true
+      },
+      {
+        "planet": "MARS",
+        "tenCandidates": true,
+        "shap": true,
+        "lazyMatrices": true,
+        "editPreservesPoint": true
+      },
+      {
+        "planet": "MOON",
+        "tenCandidates": true,
+        "shap": true,
+        "lazyMatrices": true,
+        "editPreservesPoint": true
+      },
+      {
+        "viewport": "mobile",
+        "firstVisit": true,
+        "oneYearCookie": true,
+        "reopenAndEscape": true,
+        "returnVisitSkipsIntro": true
+      },
+      {
+        "mobileSearch": true,
+        "tenCandidates": true,
+        "shap": true,
+        "noHorizontalOverflow": true
+      }
+    ],
+    "passed": true
+  },
+  "environmental_browser_check": {
+    "passed": true,
+    "errors": [],
+    "searches": [
+      {
+        "count": 10,
+        "countries": [
+          "Iran",
+          "Iran",
+          "Chile",
+          "Iran",
+          "Afghanistan",
+          "Niger",
+          "Iran",
+          "United States of America",
+          "United States of America",
+          "United States of America"
+        ],
+        "shapReconstructs": true
+      },
+      {
+        "count": 10,
+        "countries": [
+          "Iran",
+          "Mongolia",
+          "Kenya",
+          "Antarctica",
+          "Egypt",
+          "United Republic of Tanzania",
+          "Antarctica",
+          "United States of America",
+          "United States of America",
+          "United States of America"
+        ],
+        "shapReconstructs": true
+      }
+    ],
+    "passports": [
+      {
+        "reference": "mars",
+        "referenceStatus": "available",
+        "earthStatus": "available",
+        "scored": false
+      },
+      {
+        "reference": "moon",
+        "referenceStatus": "partial",
+        "earthStatus": "available",
+        "scored": false,
+        "coverage": {
+          "valid_bins": 42,
+          "total_bins": 96
+        }
+      }
+    ]
+  }
+}

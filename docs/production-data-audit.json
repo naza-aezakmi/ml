@@ -1,0 +1,56 @@
+{
+  "scope": "Production Moon/Mars terrain retrieval, separate from experimental clustering",
+  "samples_per_axis": 5,
+  "samples_per_window": 25,
+  "window_width_m": 10000,
+  "sample_spacing_m": 2500.0,
+  "height_quantization_m": 2,
+  "worlds": {
+    "moon": {
+      "source": "NASA LRO LOLA · LDEM_64",
+      "source_url": "https://ode.rsl.wustl.edu/mars/pagehelp/Content/Missions_Instruments/LRO/LOLA/GDR/GDRDEM.htm",
+      "native_spacing_approx_m_at_equator": 474,
+      "global_grid_cells": 380956,
+      "stored_windows": 380956,
+      "profile_samples": 9523900,
+      "compressed_tile_files": 20,
+      "compressed_tile_bytes": 10107629
+    },
+    "mars": {
+      "source": "NASA MGS MOLA · MEGDR 32",
+      "source_url": "https://pds-geosciences.wustl.edu/missions/mgs/megdr.html",
+      "native_spacing_approx_m_at_equator": 1853,
+      "global_grid_cells": 1446856,
+      "stored_windows": 1446856,
+      "profile_samples": 36171400,
+      "compressed_tile_files": 39,
+      "compressed_tile_bytes": 27918420
+    },
+    "earth": {
+      "source": "NOAA ETOPO 2022 · 60″",
+      "source_url": "https://www.ncei.noaa.gov/products/etopo-global-relief-model",
+      "native_spacing_approx_m_at_equator": 1853,
+      "global_grid_cells": 5106644,
+      "stored_windows": 1400048,
+      "profile_samples": 35001200,
+      "compressed_tile_files": 68,
+      "compressed_tile_bytes": 24349673
+    }
+  },
+  "earth_screen": {
+    "eligible_windows": 1356072,
+    "eligible_usa_windows": 85381,
+    "flag_frequencies": {
+      "0": 3741279,
+      "1": 1270691,
+      "2": 9293,
+      "3": 85381
+    }
+  },
+  "sha256": {
+    "relief/index.json": "d6282eb92f4363e130e84a95f84006443d7dc7c718ab288bc1cfb7d7a1d94ce9",
+    "relief/field-screen-v1.gz": "d82e261d855d4b2843c5b3364d8c7d6cae01d0658b703a35ea584fcaa831ba9a",
+    "relief-worker.js": "99dca373d0b293fc8b66406b3c6abdff25219e59af8564485a9e475af7d2c395"
+  },
+  "interpretation": "Counts describe bundled derived windows and samples, not independent observations or raw mission archive size. Source DEM pixels can be reused across windows."
+}
