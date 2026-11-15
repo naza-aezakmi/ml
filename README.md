@@ -1,5 +1,7 @@
 # Mars → Earth terrain analog model
 
+**Production flow:** the website now uses the shared Moon/Mars `POST /terrain/search` method in the `api` repository: a point plus a field-study objective returns ten Earth candidates using elevation profile, range, mean slope and roughness. This repository retains the earlier ten-type terrain-clustering experiment and its three-candidate catalogs for research and independent use; those catalogs are not used by the current website search.
+
 Trained MiniBatchKMeans model, complete global Mars type map, 30 Earth candidates, exact distance explanations, and portable browser/Python inference. The website can answer a click without a Python server or a new nearest-neighbor search.
 
 ## What is shipped
@@ -24,7 +26,7 @@ This copies one release into `web/public/ml/mars`, `web/shared/marsAnalog.ts`, `
 
 Web: `loadMarsModel()` fetches the two assets once per page, then `model.lookup(lat, lon)` returns the type, named Earth candidates, feature evidence, and climate context. The existing globe already emits degrees north/east; its local `−Z` axis points east. Do not apply a different 3D conversion to these emitted coordinates.
 
-API: `POST /terrain/analogs` accepts `{"planet":"mars","lat":18.44,"lon":77.45}`. It reads the same assets locally with no sklearn dependency. The current web card performs inference in the browser, so it does not depend on deploying this endpoint first. The existing `/terrain/search` method and lunar flow are retained.
+API: `POST /terrain/analogs` accepts `{"planet":"mars","lat":18.44,"lon":77.45}`. It reads the same experimental assets locally with no sklearn dependency. The shared production `/terrain/search` method is independent of this model and uses its own elevation atlas.
 
 ## Model and selection method
 
