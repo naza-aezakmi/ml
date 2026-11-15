@@ -7,6 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 FILES = ["mars_types.json", "mars_types_grid.bin"]
+CONTEXT_FILES = ["countries.json.gz", "mars_climate.json"]
 
 
 def main():
@@ -28,6 +29,18 @@ def main():
         shutil.copy2(ROOT / "runtime/marsAnalog.ts", args.web / "shared/marsAnalog.ts")
     if args.api:
         shutil.copy2(ROOT / "runtime/mars_lookup.py", args.api / "app/mars_lookup.py")
+        context = ROOT / "artifacts/environment"
+        if all((context / name).exists() for name in CONTEXT_FILES):
+            context_manifest = {
+                "purpose": "Country labels and separate environmental passports; outside terrain ranking",
+                "files": {name: hashlib.sha256((context / name).read_bytes()).hexdigest() for name in CONTEXT_FILES},
+            }
+            (context / "manifest.json").write_text(json.dumps(context_manifest, indent=2) + "\n")
+            destination = args.api / "app/data/environment"
+            destination.mkdir(parents=True, exist_ok=True)
+            for name in CONTEXT_FILES + ["manifest.json"]:
+                shutil.copy2(context / name, destination / name)
+            print("Exported contextual data", destination)
 
 
 if __name__ == "__main__":

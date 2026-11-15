@@ -1,0 +1,7 @@
+{
+  "purpose": "Country labels and separate environmental passports; outside terrain ranking",
+  "files": {
+    "countries.json.gz": "10f6b58b20a7cae15177f096398a7f83d2d17fe4870ffaead3d4a995115f4a8c",
+    "mars_climate.json": "c7c41435a30eb8090cafc887be22d33ddffa6b59f986debcac250f41dffeced1"
+  }
+}

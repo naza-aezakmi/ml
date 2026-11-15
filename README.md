@@ -2,6 +2,8 @@
 
 **Production flow:** the website now uses the shared Moon/Mars `POST /terrain/search` method in the `api` repository: a point plus a field-study objective returns ten Earth candidates using elevation profile, range, mean slope and roughness. This repository retains the earlier ten-type terrain-clustering experiment and its three-candidate catalogs for research and independent use; those catalogs are not used by the current website search.
 
+Production candidate explanations now use exact interventional SHAP for that additive terrain score, with the **returned shortlist's mean** as background. Its implementation is `api/app/terrain_explain.py`; the tests verify the analytical values against all 24 permutations. The current UI also has separate environmental passports, explicitly excluded from ranking by user preference. Country polygons and the documented Mars climate snapshot are packaged here in `artifacts/environment` and exported to the API. Earth climatology and Moon Diviner bins are fetched per point by the API, with sources and coverage preserved. This contextual data does not alter the experimental clustering model below.
+
 Trained MiniBatchKMeans model, complete global Mars type map, 30 Earth candidates, exact distance explanations, and portable browser/Python inference. The website can answer a click without a Python server or a new nearest-neighbor search.
 
 ## What is shipped

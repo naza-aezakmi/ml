@@ -8,6 +8,12 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class ReleaseTests(unittest.TestCase):
+    def test_environment_manifest(self):
+        directory = ROOT / "artifacts/environment"
+        manifest = json.loads((directory / "manifest.json").read_text())
+        for name, digest in manifest["files"].items():
+            self.assertEqual(hashlib.sha256((directory / name).read_bytes()).hexdigest(), digest)
+
     def test_manifest(self):
         directory = ROOT / "artifacts/mars"
         manifest = json.loads((directory / "manifest.json").read_text())
