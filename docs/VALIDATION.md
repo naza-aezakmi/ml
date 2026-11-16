@@ -1,38 +1,43 @@
-# Проверки реализации и локальные замеры
+# Implementation checks
 
-Snapshot: **15 ноября 2026**, локальная production-сборка, Python 3.12, Node 22.23.5, Chrome с программным WebGL. [Машиночитаемые результаты](validation-snapshot.json).
+Recorded **15 November 2026** using local production builds, Python 3.12, Node 22.23.5 and Chrome with software WebGL. [Saved results](validation-snapshot.json).
 
-## Корректность
+## What we checked
 
-- API: **33 пройденные проверки**, включая известную плоскость, остаточную неровность, все 24 перестановки SHAP, приоритеты задач, контекст и кеширование.
-- ML release: **3 проверки** глобальной карты типов и контрольных сумм артефактов.
-- Browser-independent TypeScript inference: **3 проверки** экспериментального каталога, координатных соглашений и повторной загрузки.
-- Для восьми поисковых запросов до и после оптимизации полностью совпали JSON-ответы: координаты, порядок кандидатов, характеристики, баллы, страны и SHAP.
-- Chrome, 1440 × 960 и 390 × 844: первый визит, cookie на год, повторный визит, открытие инструкции заново, Escape, поиск для обеих планет, десять кандидатов, SHAP, отложенные матрицы и сохранение выбранной точки при возврате. Горизонтального переполнения на проверенном мобильном экране нет.
+| Check | Result |
+|---|---|
+| API tests | 33 passed: known-plane slope, known residual roughness, SHAP, priorities, context, inputs and caching. |
+| Experimental ML release | 3 passed: global type map and artifact integrity. |
+| TypeScript experimental inference | 3 passed: catalogue lookup, coordinate conventions and repeated loading. |
+| Search regression | Eight full responses matched before and after optimisation, including candidate order, measurements, countries and explanations. |
+| Browser flow | Both planets returned ten candidates; explanations, deferred matrices and returning to the selected point worked. |
+| First-visit guide | Cookie persistence, repeat visits, reopening and Escape were checked on desktop and mobile. |
 
-Команды для проверок в соседних репозиториях:
+The saved browser run used 1440 × 960 and 390 × 844 viewports, with no horizontal overflow in the checked mobile view.
+
+## Repeat the checks
 
 ```bash
-# api/; Python 3.12 и Node 22 доступны в PATH:
+# api/; Python 3.12 and Node 22 available
 python -m pytest -q
 
-# ml/:
+# ml/
 python3 -m unittest discover -s tests -v
 python3 scripts/audit_production.py --api ../api
 
-# web/; Node 22, pnpm 9.15.9:
+# web/; Node 22 and pnpm 9.15.9
 pnpm test:model
 pnpm build
 ```
 
-## Производительность
+## Loading measurements
 
-В локальном Chrome объём уникальных JavaScript-ресурсов первого посещения, переданных по сети, уменьшился с **1 250 687 до 325 124 байт** — примерно на **74%**. После изменения учтён и новый онбординг. Основная причина — согласованная сервером передача предварительно сжатых Brotli-ресурсов; экран результатов и матрицы выделены в отдельные асинхронные модули. Это измерение объёма JavaScript, не всей страницы и не гарантированного времени открытия на любом устройстве.
+In the local Chrome comparison, first-visit JavaScript transferred over the network fell from **1,250,687 to 325,124 bytes**. This includes the guide after the change. Precompressed Brotli delivery and deferred results/matrix modules account for the reduction. It measures JavaScript bytes, not total page size or guaranteed load time.
 
-Медиана четырёх повторных одинаковых запросов на localhost изменилась примерно с **0,90 с до 0,003 с**. Используется ограниченный кеш 64 успешных результатов по телу, ячейке атласа и весам. **На новый участок и первичную загрузку атласа это ускорение не распространяется.** Формула, полнота земного пула и численные результаты сохранены.
+Median time for four repeated, identical localhost searches fell from about **0.90 s to 0.003 s** with the 64-entry result cache. This applies to a warm worker and cached cell/weights; a new cell or initial atlas load still needs computation.
 
-Ненужная отрисовка скрытого desktop-canvas на мобильных экранах отключена. Два неиспользуемых компонента и две заменённые JPEG-текстуры удалены; действующие WebP-текстуры и независимые экспериментальные ML-артефакты сохранены.
+## What remains unvalidated
 
-## Граница утверждений
+These checks establish software behaviour and mathematical consistency. They do not establish field-site suitability or rover passability.
 
-Тесты проверяют программную реализацию и интерфейс. **Они не доказывают научную точность выбора земного аналога или проходимость ровера.** Для этого необходимы независимая экспертная разметка и полевые данные. Текущие ограничения и план такой оценки описаны в [карточке метода](MODEL_CARD.md).
+We do not yet have an independent expert-labelled benchmark, measured precision@10 or field-test outcomes. [The method card](MODEL_CARD.md) describes the next steps.

@@ -1,59 +1,69 @@
-# Earth analogues for Moon & Mars
+# Terrain data and matching
 
-**[Открыть сайт](https://nasa.aezakmi.org) · [API](https://api.nasa.aezakmi.org/docs) · [Метод и формулы](docs/MODEL_CARD.md) · [Источники и объёмы](docs/DATA_SOURCES.md)**
+Data analysis and methods for finding Earth locations with terrain similar to a selected place on the Moon or Mars.
 
-Проект находит земные участки с крупным рельефом, похожим на выбранную область Луны или Марса, для подготовки полевых испытаний. Пользователь выбирает точку и задачу, получает десять кандидатов, сравнение характеристик, объяснение SHAP и отдельный паспорт окружающих условий.
+**[Try the website](https://nasa.aezakmi.org) · [Presentation (PDF)](presentation/aezakmi-project.pdf) · [Method](docs/MODEL_CARD.md) · [Sources and data counts](docs/DATA_SOURCES.md) · [English charts](presentation/README.md)**
 
-**[Материалы для презентации](presentation/README.md):** светлые графики полного EDA, реального рейтинга и Exact SHAP, PDF/PowerPoint и заметки докладчика. Все 3 183 884 окна действующего атласа пересчитаны той же функцией метрик, что и в API.
+## What the website compares
 
-## Как работает действующий поиск
+Each location is represented by **25 heights over a 10 × 10 km window**. We compare four properties:
 
-1. Координата попадает в заранее подготовленное окно планетарного атласа. Окно шириной около **10 км** представлено **25 высотами: 5 × 5 с шагом 2,5 км**.
-2. Поиск сравнивает его с **1 356 072 допустимыми земными окнами** после региональной маски воды.
-3. Рейтинг определяется формой профиля высот, перепадом высот, наклоном аппроксимирующей плоскости и остаточной неровностью рельефа.
-4. Выбранная задача назначает этим характеристикам веса. Десять кандидатов отбираются с учётом отдельного правила географического распределения.
-5. SHAP объясняет балл относительно среднего по показанным кандидатам. Климат загружается отдельно и не участвует в рейтинге.
+| Criterion | What it captures |
+|---|---|
+| Terrain profile | The arrangement of high and low ground, after aligning the windows. |
+| Elevation range | The difference between the highest and lowest samples. |
+| Regional slope | The inclination of a plane fitted to the window. |
+| Roughness | Height variation left after removing that plane. |
 
-$$D=w_p\left(\frac{E_p}{100\,\mathrm{m}}\right)^2+w_h\left(\frac{\Delta H}{150\,\mathrm{m}}\right)^2+w_s\left(\frac{\Delta S}{2^\circ}\right)^2+w_q\left(\frac{\Delta Q}{50\,\mathrm{m}}\right)^2.$$
+The search checks **1,356,072 eligible Earth windows**. The testing task changes the importance of each criterion. For a rover, slope gets 45%, roughness 25%, terrain profile 20% and elevation range 10%.
 
-**Чем меньше D, тем ближе рельеф по выбранным критериям.** Это взвешенная сумма квадратов нормированных различий: квадрат взвешенного евклидова расстояния по сопоставляемым дескрипторам. Профиль предварительно центрируется и совмещается поворотами на 90°. Балл не является процентом сходства или вероятностью успешного испытания. Все переменные, пример расчёта и ограничения — в [карточке метода](docs/MODEL_CARD.md).
+## The matching formula
 
-## Какие данные используются
+<img src="presentation/formula_en/normalized_euclidean_distance.png" alt="d(x,y) = square root of the sum of weighted, squared, normalised differences" width="620">
 
-| Тело | Источник рельефа | Окон в подготовленном атласе | Отсчётов высоты |
-|---|---|---:|---:|
-| Луна | NASA LRO LOLA, LDEM_64 | 380 956 | 9 523 900 |
-| Марс | NASA MGS MOLA, MEGDR 32 | 1 446 856 | 36 171 400 |
-| Земля | NOAA ETOPO 2022, 60″ | 1 400 048 до дополнительного фильтра | 35 001 200 |
+In plain words: **measure the differences, divide by reference scales, apply task weights, and combine them**. Smaller distance means a closer terrain match. The API ranks by the squared distance, which gives the same order.
 
-Это **производные окна и отсчёты**, а не количество независимых наблюдений или размер архива миссии. Итоговый земной пул после маски воды — **1 356 072 окна**. Числа получены чтением поставляемого атласа и маски: [аудит с SHA-256](docs/production-data-audit.json).
+We chose this form so metres and degrees can be compared, task priorities stay explicit, and large mismatches receive a larger penalty. The weights and scales are design choices; they were not learned from successful rover tests. [Definitions and an example](docs/MODEL_CARD.md).
 
-Перечень источников, пространственный масштаб, контекст температуры и атмосферы: [DATA_SOURCES.md](docs/DATA_SOURCES.md).
+## What the data showed
 
-## Что обучено, а что используется на сайте
+![Distributions of elevation range, regional slope and roughness](presentation/charts_en/04_terrain_distributions_combined.png)
 
-Действующий `/terrain/search` — детерминированный поиск по физическим характеристикам рельефа. Его веса и масштабы различий заданы разработчиками; они не обучены на успешных испытаниях роверов. Обученного классификатора проходимости в нём нет.
+We analysed **all 3,183,884 eligible windows** in the delivered Earth, Moon and Mars atlas. Median elevation range was **74 m on Earth, 134 m on Mars and 882 m on the Moon**. These are window statistics at our chosen scale.
 
-Также сохранён **отдельный обученный эксперимент MiniBatchKMeans**: десять типов Марса, глобальная карта типов и фиксированный каталог из 30 земных кандидатов. Он доступен для исследования и независимого запуска; текущий сайт использует общий поиск для Луны и Марса. [Эксперимент, обучение и интеграция](docs/EXPERIMENTAL_MODEL.md).
+The distributions differ, but individual regions can still match. Some features are strongly related: elevation range and roughness have Spearman correlations of about **0.95 on Earth** and **0.94 on Mars**. We therefore show how the score was formed rather than treating each criterion as independent evidence. [Charts, CSVs and reproduction](presentation/README.md).
 
-## Структура и воспроизводимость
+## Explain a recommendation
 
-- `docs/`: метод, источники, аудит и описание экспериментального обучения.
-- `scripts/audit_production.py`: подсчёт объёмов атласа из соседнего API-репозитория; Python стандартной библиотеки.
-- `artifacts/environment/`: границы стран и снимок климатической модели Марса с происхождением и контрольными суммами.
-- `models/`, `artifacts/mars/`, `runtime/`, `training/`: обученный эксперимент и его inference.
+![SHAP explanation shown on the website](docs/images/shap-explanation.jpg)
+
+Exact SHAP shows how each criterion changes a candidate's mismatch relative to the average of the displayed shortlist. Blue means less mismatch; red means more. The baseline and four contributions add back to the score.
+
+Temperature and other environmental conditions have their own passport. They do not affect the terrain ranking.
+
+## What we trained
+
+We also trained **MiniBatchKMeans on 150,000 Mars terrain vectors** and tested 6, 10 and 14 clusters. Ten types were kept as a useful level of detail for the prototype. Each type has a fixed set of Earth candidates.
+
+That experiment is saved here with its model, global map and inference code. The current website uses the four-criterion search described above. [Training, results and limitations](docs/EXPERIMENTAL_MODEL.md).
+
+## Work with the repository
+
+| Folder | Contents |
+|---|---|
+| `docs/` | Method, data sources, audited counts and validation. |
+| `presentation/` | English PNG charts, supporting CSVs and saved search examples. |
+| `models/`, `artifacts/mars/` | Trained clustering model, type map and candidate catalogue. |
+| `training/`, `runtime/` | Experimental training and inference code. |
+| `artifacts/environment/` | Country polygons and the Mars climate snapshot. |
+| `scripts/` | Auditing, chart export and artifact synchronisation. |
 
 ```bash
-# Из ml/; web/, api/ и ml/ расположены рядом.
+# Keep api/, web/ and ml/ next to each other. Run from ml/.
 python3 scripts/audit_production.py --api ../api
 python3 -m unittest discover -s tests -v
-
-# Синхронизация экспериментальных и контекстных артефактов:
-python3 scripts/export.py --web ../web --api ../api
 ```
 
-Код действующего поиска и математические проверки — в [API](https://github.com/Org666777148852/api), интерфейс — в [web](https://github.com/Org666777148852/web). Большие исходные DEM, кеши и отчёты обучения не включены в Git; входы для обучения описаны в карточке эксперимента.
+The live search implementation is in [api](https://github.com/naza-aezakmi/api); the interface is in [web](https://github.com/naza-aezakmi/web). Research uses Python, NumPy, pandas, SciPy, scikit-learn and Matplotlib.
 
-## Как интерпретировать результат
-
-Проверена математическая согласованность: известная плоскость, известное остаточное возмущение и восстановление балла из SHAP. [Результаты проверок и локальные замеры](docs/VALIDATION.md). **Полевой точности, вероятности проходимости и независимого benchmark по экспертно подтверждённым аналогам пока нет.** Место может совпасть по рельефу и отличаться по грунту, растительности, климату и доступности. Проверка финалистов на подробных DEM и в поле остаётся следующим этапом.
+[Validation](docs/VALIDATION.md) checks the implementation. Field accuracy and rover passability still need independent expert and field data.

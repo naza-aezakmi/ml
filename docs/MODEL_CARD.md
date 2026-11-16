@@ -1,104 +1,103 @@
-# Карточка действующего метода: Moon/Mars → Earth
+# How terrain matching works
 
-## Назначение и схема
+The search helps teams shortlist Earth locations for a field test. It compares regional terrain around a selected Moon or Mars coordinate. The test objective decides which properties matter most.
 
-Поиск предлагает земные кандидаты для испытаний по **региональному рельефу**. Вход: тело, широта, долгота и цель исследования. Выход: до десяти земных окон, характеристики, балл несовпадения, координаты и объяснение. Температура и атмосфера представлены отдельным паспортом.
+**[Website](https://nasa.aezakmi.org) · [Sources](DATA_SOURCES.md) · [Validation](VALIDATION.md) · [Separate KMeans experiment](EXPERIMENTAL_MODEL.md)**
 
-`координата → окно планеты → 25 высот → сравнение с земным атласом → фильтры и веса → десять кандидатов → SHAP + паспорт условий`
+## From a click to a terrain window
 
-Точка привязывается к ячейке атласа с номинальным шагом 10 км. Ответ содержит центр фактически использованной ячейки. Два клика внутри одной ячейки с одинаковыми весами дают одинаковый результат. У окна 5 × 5 отсчётов, расстояние между крайними точками — 10 км, соседними — 2,5 км. Высоты квантованы с шагом 2 м; это формат хранения, а не вертикальная точность исходного DEM.
+A click resolves to an atlas cell. Its window contains **5 × 5 height samples**, spaced **2.5 km** apart: **10 km between the outer samples**. The response includes the cell centre actually used. Clicks resolving to the same cell and weights give the same result.
 
-## Четыре характеристики
+Heights are stored in 2 m increments. That is a storage setting, not a claim of 2 m DEM accuracy.
 
-Пусть N = 25, высоты планеты — pᵢ, Земли — eᵢ. Локальные координаты x, y берутся из {−5000, −2500, 0, 2500, 5000} м.
+## Four criteria
 
-### 1. Форма профиля: profile, Eₚ, метры
+| Criterion | Calculation | Unit |
+|---|---|---|
+| Terrain profile | Subtract each window's own mean height. Try rotations of 0°, 90°, 180° and 270°. Keep the lowest root mean squared difference between the 25 aligned heights. | m |
+| Elevation range | Highest sample minus lowest sample. Compare the Earth and planetary values. | m |
+| Regional slope | Fit a plane to the 25 heights by least squares. Compare the inclination angles of the two planes. | degrees |
+| Residual roughness | Calculate RMS height residuals after removing the fitted plane. Compare the two values. | m |
 
-Из каждого профиля вычитается его собственная средняя высота. Затем проверяются повороты 0°, 90°, 180°, 270°; выбирается наименьшая среднеквадратическая ошибка:
+Centring removes differences in absolute altitude. A valley on a high plateau can therefore match a lower valley. Alignment permits quarter-turns; it does not stretch terrain or search continuous rotation angles.
 
-$$E_p=\min_{r\in\{0,90,180,270\}}\sqrt{\frac{1}{N}\sum_i\left[(e_i-\bar e)-(p_{r(i)}-\bar p)\right]^2}.$$
+Regional slope describes overall tilt. It is not the steepest slope or the mean of local slopes. A symmetrical crater can have little overall tilt and steep walls. Roughness describes kilometre-scale landforms, not rocks or wheel contact.
 
-В API это `candidate.error`. RMSE = 0 м означает совпадение всех 25 центрированных высот после поворота. RMSE = 100 м — среднеквадратическое расхождение в 100 м; отдельная точка может отличаться сильнее. Долины на разной абсолютной высоте могут получить близкий профиль. Произвольные непрерывные повороты и изменение горизонтального масштаба не выполняются.
+[terrainStats in relief-worker.js](https://github.com/naza-aezakmi/api/blob/main/terrain-atlas/relief-worker.js) implements these measurements. The plane uses all 25 samples; the sum of squared x coordinates, and likewise y coordinates, is 312,500,000 m².
 
-### 2. Перепад высот: range, H, метры
+## One short formula
 
-$$H=\max_i z_i-\min_i z_i.$$
+<img src="../presentation/formula_en/normalized_euclidean_distance.png" alt="d(x,y) = square root of the sum of weighted, squared, normalised differences" width="620">
 
-В рейтинг входит разность ΔH = H_Земля − H_планета. Перепад различает равнину и сильно расчленённый участок, но сам по себе не описывает расположение холмов.
+- **x and y** represent the planetary and Earth terrain being compared.
+- **i** is one of the four criteria.
+- **wᵢ** is its task weight.
+- **sᵢ** is a reference scale that makes the differences comparable.
 
-### 3. Региональный наклон: slope, S, градусы
+For the profile criterion, the difference is the aligned profile RMSE. For the other three, it is the difference between Earth and planetary measurements.
 
-Высоты методом наименьших квадратов приближаются плоскостью ẑ = c + ax + by. Благодаря симметрии сетки:
+| Criterion | Reference scale |
+|---|---:|
+| Profile RMSE | 100 m |
+| Elevation range | 150 m |
+| Regional slope | 2° |
+| Roughness | 50 m |
 
-$$c=\bar z,\quad a=\frac{\sum_i x_i z_i}{\sum_i x_i^2},\quad b=\frac{\sum_i y_i z_i}{\sum_i y_i^2},\quad S=\frac{180}{\pi}\arctan\sqrt{a^2+b^2}.$$
+The API score is **D = d²**. Taking the square root would not change the ranking. This is weighted, normalised Euclidean matching, with profile alignment before scoring. Cosine distance is not used.
 
-Знаменатель Σxᵢ² = Σyᵢ² = **312 500 000 м²** включает все 25 точек. Это наклон общей плоскости, не средний локальный уклон и не самый крутой склон. У симметричной чаши общий наклон может быть близок к нулю при крутых отдельных склонах.
+We chose this form because criteria have different units, tasks need different priorities, and squaring penalises large mismatches more strongly. The additive score also allows exact feature explanations.
 
-### 4. Остаточная неровность: roughness, Q, метры
+Weights and scales are design settings, not learned safety limits, standard deviations or NASA recommendations. Correlated criteria can describe overlapping terrain properties; four low penalties are not four independent confirmations.
 
-$$Q=\sqrt{\frac{1}{N}\sum_i(z_i-c-ax_i-by_i)^2}.$$
+## How the task changes the weights
 
-Этот RMS показывает отклонения высот от плоскости после удаления общего наклона. Плоский наклонный участок имеет Q ≈ 0, холмистый — большее Q. При шаге 2,5 км характеристика описывает крупные формы; камни, колеи и контакт колеса с грунтом из неё не определяются.
+Weights are non-negative and sum to one.
 
-## Итоговая формула и веса
+| Task | Profile | Range | Slope | Roughness |
+|---|---:|---:|---:|---:|
+| Rover testing | 20% | 10% | 45% | 25% |
+| Astronaut field training | 20% | 25% | 45% | 10% |
+| Landing sensor testing | 45% | 25% | 20% | 10% |
+| Excavation site layout | 10% | 20% | 45% | 25% |
+| Geology and sampling practice | 45% | 25% | 10% | 20% |
 
-$$D=w_p\left(\frac{E_p}{100\,\mathrm{m}}\right)^2+w_h\left(\frac{\Delta H}{150\,\mathrm{m}}\right)^2+w_s\left(\frac{\Delta S}{2^\circ}\right)^2+w_q\left(\frac{\Delta Q}{50\,\mathrm{m}}\right)^2.$$
+For example, profile RMSE of 50 m, range difference of 75 m, slope difference of 1° and roughness difference of 25 m each give a normalised difference of 0.5. The score is **D = 0.25**, or **d = 0.5**. With rover weights, increasing only the slope difference to 2° raises D to **0.5875**.
 
-Все слагаемые безразмерны; веса неотрицательны и суммируются в 1. Меньший D означает меньшее несовпадение. Это **квадрат взвешенного евклидова расстояния** по нормированным различиям с предварительным совмещением профиля. Извлечение √D сохраняет порядок кандидатов. Косинусное расстояние не используется.
+The optional language-model service turns a custom task description into an order of these same criteria. It does not generate sites or terrain measurements. Preset tasks need no language model. If the custom service is unavailable, the default order is profile, range, slope, roughness. The response reports `prioritySource`.
 
-Масштабы 100 м / 150 м / 2° / 50 м — **настройки метода**, приводящие разные величины к сопоставимым штрафам. Это не стандартные отклонения, не границы безопасности и не параметры, обученные на размеченных испытаниях. Признаки связаны: профиль, перепад и неровность могут отражать одни формы. Для эмпирической калибровки требуется экспертная разметка.
+## How ten candidates are selected
 
-Веса 0,45 / 0,25 / 0,20 / 0,10 назначаются в таком порядке:
+The delivered Earth atlas stores **1,400,048 land windows**. A regional coastline and lake screen leaves **1,356,072 eligible centres**.
 
-| Задача | 0,45 | 0,25 | 0,20 | 0,10 |
-|---|---|---|---|---|
-| Ровер | slope | roughness | profile | range |
-| Подготовка астронавтов | slope | range | profile | roughness |
-| Посадочные сенсоры | profile | range | slope | roughness |
-| Земляные работы | slope | roughness | range | profile |
-| Геологическая практика | profile | range | roughness | slope |
-| Базовый порядок | profile | range | slope | roughness |
+The worker keeps separate shortlists for the United States and other regions. When enough candidates exist, three positions are reserved for the US and seven for other regions; unused positions can be filled from the other group. The combined list is sorted by score.
 
-Пользовательский текст может отправляться в необязательный сервис определения порядка четырёх критериев. Он не выбирает координаты и не генерирует характеристики мест. При недоступности сервиса применяется базовый порядок; API сообщает `prioritySource`. Для готовых задач внешняя языковая модель не нужна.
+The returned ten are therefore not necessarily the ten smallest scores worldwide. There is currently no minimum separation rule between candidates. Country labels refer to the window centre.
 
-**Пример для ровера.** Eₚ = 50 м, ΔH = 75 м, ΔS = 1°, ΔQ = 25 м. Каждое нормированное различие равно 0,5, поэтому D = (0,20 + 0,10 + 0,45 + 0,25) × 0,5² = **0,25**. При изменении только ΔS до 2° результат D = **0,5875**: больший штраф соответствует приоритету уклонов. Эти числа напрямую не переводятся в процент сходства.
+## How to read SHAP
 
-## Отбор десяти мест
+Each criterion contributes one weighted penalty to D. For this additive score, its exact interventional SHAP value is:
 
-Из 1 400 048 подготовленных земных профилей региональная маска побережий и озёр допускает 1 356 072 центра. Она не гарантирует отсутствие небольших рек и сезонной воды.
+**candidate's criterion penalty − average criterion penalty in the returned shortlist**
 
-Алгоритм ведёт отдельные короткие списки США и других регионов. При достаточном числе вариантов резервируются три позиции для США, остальные семь — для других регионов; при нехватке группы свободные позиции заполняются другой. Итог сортируется по D. **Это десять рекомендаций с географическим правилом, а не безусловные десять глобальных минимумов D.** Страна определяется отдельно по центру окна. Контроля минимального расстояния между кандидатами сейчас нет.
+The baseline is the average score of that shortlist. **Baseline + four SHAP values = the candidate's score.**
 
-## Объяснение SHAP
-
-Штраф gⱼ — одно из четырёх слагаемых D. Фон B — фактически возвращённый список:
-
-$$\phi_j=g_j(x)-\frac{1}{|B|}\sum_{b\in B}g_j(b),\qquad D(x)=D_0+\sum_j\phi_j.$$
-
-D₀ — средний балл списка. Для аддитивного score это точный **interventional SHAP по четырём дескрипторам**. Объяснение относится к дескрипторам скоринга, не к независимым физическим воздействиям.
-
-- Отрицательный вклад уменьшает несовпадение относительно среднего кандидата списка.
-- Положительный увеличивает его относительно среднего.
-- Смена задачи или списка меняет фон и может изменить вклады.
-- Географическая квота и маска воды находятся вне формулы и этими барами не объясняются.
-
-Это локальное объяснение рекомендации, не причинное заключение, доверительный интервал или глобальная важность признаков.
-
-## Дополнительные показатели интерфейса
-
-Матрицы показывают 25 высот и их разности после совмещения. Pearson r описывает корреляцию центрированных профилей; при нулевой дисперсии одного профиля он не определён. Высокая корреляция возможна при разной амплитуде высот, поэтому r не заменяет RMSE. MAE — среднее абсолютное отклонение, max error — максимальное; они отдельно не входят в рейтинг.
-
-## Проверки и границы валидации
-
-| Проверка | Что подтверждает |
+| Bar | Meaning |
 |---|---|
-| Плоскость z = 500 + 0,004x + 0,006y | Правильный наклон и нулевая остаточная неровность |
-| Добавленные 25 м в центре этой плоскости | Сохранение наклона и Q = √24 м после удаления среднего |
-| Все 24 перестановки четырёх признаков | Аналитические SHAP совпадают с определением и восстанавливают D |
-| Входы API, приоритеты, источники и пропуски | Корректная обработка запроса и контекста |
+| Blue / negative | Less mismatch than the shortlist average for this criterion. |
+| Red / positive | More mismatch than the shortlist average for this criterion. |
 
-Код: [relief-worker.js](https://github.com/Org666777148852/api/blob/main/terrain-atlas/relief-worker.js), [terrain_explain.py](https://github.com/Org666777148852/api/blob/main/app/terrain_explain.py), [тесты физических величин](https://github.com/Org666777148852/api/blob/main/tests/test_terrain_stats.py), [тесты SHAP](https://github.com/Org666777148852/api/blob/main/tests/test_terrain_explain.py).
+Changing the objective or shortlist changes the baseline. These bars explain the terrain score; the water mask and geographic allocation are separate selection rules. They do not express confidence, causality or global feature importance.
 
-Эти проверки подтверждают реализацию формул, **но не измеряют качество выбора реальных полигонов**. Нет независимой разметки, precision@10, полевой проверки или калиброванной вероятности проходимости. Планетарные абсолютные высоты имеют разные отсчётные поверхности; для сравнения формы они центрируются.
+The calculation is analytical and needs no approximate explainer or separate model. [Code](https://github.com/naza-aezakmi/api/blob/main/app/terrain_explain.py) and [checks against all 24 feature permutations](https://github.com/naza-aezakmi/api/blob/main/tests/test_terrain_explain.py).
 
-Следующий этап: экспертно оценённые пары и сложные отрицательные примеры, precision@10 по задачам, чувствительность к размеру и сдвигу окна, уточнение финалистов на подробных DEM общего масштаба. Для конкретного ровера дополнительно нужны размеры препятствий, механика грунта и характеристики машины.
+## Other information in a result
+
+Height matrices show the 25 samples and their aligned differences. Pearson correlation describes the height pattern; it can be high even when height amplitudes differ. MAE and maximum error are additional summaries, not extra ranking terms.
+
+Temperature and atmospheric conditions appear separately. Earth climate averages, the Mars model snapshot and Moon surface temperatures have different periods and physical meanings, so we do not combine them into the terrain score.
+
+## What the result can support
+
+The method provides a reproducible regional shortlist. We have tested the calculations, but have not measured precision@10 against independent expert-labelled sites or validated rover passability in the field.
+
+Next steps are expert review by task, hard negative examples, sensitivity to window size and position, and finer DEM comparison of finalists at a common scale. A rover-specific assessment also needs obstacle size, soil mechanics and vehicle dimensions.

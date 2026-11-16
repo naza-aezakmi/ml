@@ -1,55 +1,66 @@
-# Источники, объёмы и масштаб данных
+# Data sources and coverage
 
-Числа относятся к **поставляемому production-атласу API**, не к размерам полных архивов NASA/NOAA. Метод: [MODEL_CARD.md](MODEL_CARD.md).
+These counts describe the **delivered API atlas**, rather than complete mission archives. [Method](MODEL_CARD.md) · [Machine-readable audit](production-data-audit.json).
 
-## Рельеф: три источника в рейтинге
+## Terrain used in the ranking
 
-| Тело | Источник и продукт | Нативная сетка | Хранимые окна | Отсчёты в окнах | Сжатые тайлы |
-|---|---|---|---:|---:|---:|
-| Луна | [NASA LRO LOLA GDRDEM, LDEM_64](https://ode.rsl.wustl.edu/mars/pagehelp/Content/Missions_Instruments/LRO/LOLA/GDR/GDRDEM.htm) | 64 пикселя/градус; ≈474 м у экватора | 380 956 | 9 523 900 | 20 файлов; 10 107 629 байт |
-| Марс | [NASA MGS MOLA MEGDR 32](https://pds-geosciences.wustl.edu/missions/mgs/megdr.html) | 32 пикселя/градус; ≈1853 м у экватора | 1 446 856 | 36 171 400 | 39 файлов; 27 918 420 байт |
-| Земля | [NOAA ETOPO 2022, 60 arc-second](https://www.ncei.noaa.gov/products/etopo-global-relief-model) | 60 угловых секунд; ≈1853 м у экватора | 1 400 048 | 35 001 200 | 68 файлов; 24 349 673 байт |
+| Body | Product | Native grid | Stored windows | Height samples |
+|---|---|---|---:|---:|
+| Moon | [NASA LRO LOLA, LDEM_64](https://ode.rsl.wustl.edu/mars/pagehelp/Content/Missions_Instruments/LRO/LOLA/GDR/GDRDEM.htm) | 64 pixels/degree; about 474 m at the equator | 380,956 | 9,523,900 |
+| Mars | [NASA MGS MOLA, MEGDR 32](https://pds-geosciences.wustl.edu/missions/mgs/megdr.html) | 32 pixels/degree; about 1,853 m at the equator | 1,446,856 | 36,171,400 |
+| Earth | [NOAA ETOPO 2022, 60 arc-seconds](https://www.ncei.noaa.gov/products/etopo-global-relief-model) | About 1,853 m at the equator | 1,400,048 before the water screen | 35,001,200 |
 
-Лунный и марсианский атласы покрывают глобальную сетку. Глобальная адресная сетка Земли имеет 5 106 644 центра; профили сохранены для 1 400 048 сухопутных окон. После фильтра воды допустимы **1 356 072** центра, из них 85 381 в группе США.
+The Earth address grid has 5,106,644 centres. Profiles are stored for land windows; the water screen leaves **1,356,072 eligible centres**, including 85,381 in the US group.
 
-Всего сохранено **80 696 500 отсчётов высоты**. Это записи производного атласа: исходный пиксель DEM может использоваться несколько раз. Нельзя представлять их как независимые измерения или обучающие примеры. При клике выбранное планетарное окно сравнивается с земным пулом; все окна Марса и Луны заново не перебираются.
+There are **80,696,500 stored height samples** in total. These are derived records. Source DEM pixels can be reused, so this is not a count of independent measurements or training examples.
 
-Угловой размер пикселя не равен постоянному расстоянию: расстояние по долготе меняется с широтой. В атласе номинальное окно — 10 км, 25 отсчётов через 2,5 км. Пересэмплирование не создаёт деталей мельче исходного продукта. Метры в формуле не означают метровое пространственное разрешение.
+The atlas contains 127 compressed terrain tiles: Moon 20 files / 10,107,629 bytes; Mars 39 / 27,918,420 bytes; Earth 68 / 24,349,673 bytes. Sizes exclude the index and masks.
 
-DEM — производные, местами интерполированные или составные продукты. Подробные HiRISE, LROC и Copernicus DEM в production-рейтинг сейчас не входят. Распознавание камней, рыхлого песка или сцепления колёс по этому атласу не заявляется.
+## Common comparison scale
 
-## Маски и подписи
+Each window has 25 samples at 2.5 km spacing, covering about 10 × 10 km. Angular pixel size varies in physical distance with latitude. Resampling does not create finer detail than the source.
 
-Маска побережий и озёр `field-screen-v1.gz` хранит байт на центр земной сетки. Младший бит — допустимость окна, следующий — группа США. Географический источник: [Natural Earth physical vectors](https://www.naturalearthdata.com/downloads/10m-physical-vectors/). Маска исключает крупную картографированную воду, но не подтверждает сухость грунта и доступность полигона.
+The EDA uses **3,183,884 eligible windows** across the three bodies. Statistics describe windows, not exact fractions of planetary surface area. Detailed HiRISE, LROC and Copernicus DEMs are not inputs to the live ranking.
 
-Страна/территория определяется по центру окна через [Natural Earth admin-0 1:50m](https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_50m_admin_0_countries.geojson). Границы упакованы в `artifacts/environment/countries.json.gz`, SHA-256 — в соседнем manifest. Неразрешённая принадлежность остаётся неизвестной. Подпись центра не означает, что окно целиком в одной стране или получены разрешения на работу.
+## Water screening and location labels
 
-## Паспорт условий: вне рейтинга
+| Source | Use |
+|---|---|
+| [Natural Earth physical vectors, 1:10m](https://www.naturalearthdata.com/downloads/10m-physical-vectors/) | Regional coastlines and lake screening, encoded in `field-screen-v1.gz`. |
+| [Natural Earth countries, 1:50m](https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_50m_admin_0_countries.geojson) | Country or territory of each returned window centre. Bundled with provenance under `artifacts/environment/`. |
+| [Natural Earth admin-1 polygons, 1:10m](https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_admin_1_states_provinces.geojson) | Regional labels in the experimental Mars catalogue. |
+| [USGS/IAU Gazetteer](https://planetarynames.wr.usgs.gov/GIS_Downloads) | Named lunar and Martian features for map labels and search. |
 
-| Источник | Используемые данные | Масштаб, период и ограничения |
+The water screen handles major mapped water, not every stream or seasonal flood. Country labels describe the centre; a window can cross a boundary. Unknown labels remain unknown.
+
+## Environmental passports: separate from ranking
+
+| Source | What we show | Period and scale |
 |---|---|---|
-| [NASA POWER Climatology / MERRA-2](https://power.larc.nasa.gov/docs/services/api/temporal/climatology/) | Земля: T2M, TS, RH2M, PRECTOTCORR, WS10M, PS; месячные и годовые нормы | По центру кандидата. Период берётся из `header.range`; в проверенном ответе — 2001–2025. Это климатическая сетка, не измерение каждого участка и не прогноз. Холодный/тёплый месяц — месячные средние, не суточные экстремумы. |
-| [Mars Climate Database 6.2](https://www-mars.lmd.jussieu.fr/) | Марс: температура поверхности/воздуха, давление, ветер | Сохранённая сетка 48 × 64: 3072 узла. Один модельный сценарий, Ls = 0°, местный полдень, средняя солнечная активность; атмосферные поля на 10 м. Берётся ближайший узел, без заявления о локальной точности. |
-| [NASA LRO Diviner Global Cumulative Product](https://pds-geosciences.wustl.edu/lro/urn-nasa-pds-lro_diviner_derived1/data_derived_gcp/) | Луна: min/max и размах доступных средних болометрических температур поверхности | Наблюдения 05.07.2009–01.04.2015; пространственные бины 0,5°, 96 бинов лунного местного времени по 0,25 часа. Показывается фактическое покрытие. Это диапазон доступных средних, не гарантированные экстремумы каждой точки. |
+| [NASA POWER Climatology / MERRA-2](https://power.larc.nasa.gov/docs/services/api/temporal/climatology/) | Earth air and skin temperature, monthly temperature range, humidity, precipitation, 10 m wind and pressure. Parameters: T2M, TS, RH2M, PRECTOTCORR, WS10M, PS. | Gridded climate averages at the candidate centre. The period comes from the response header; the checked response covers 2001–2025. Monthly means are not daily extremes. |
+| [Mars Climate Database 6.2](https://www-mars.lmd.jussieu.fr/) | Mars surface and atmospheric temperature, pressure and wind. | Bundled 48 × 64 grid, nearest node. One scenario: Ls = 0°, local noon, average solar activity; atmospheric fields at 10 m. Model output, not current weather or an annual average. |
+| [NASA LRO Diviner Global Cumulative Product](https://pds-geosciences.wustl.edu/lro/urn-nasa-pds-lro_diviner_derived1/data_derived_gcp/) | Minimum, maximum and span of available mean bolometric surface temperatures, with coverage. | Observations from 2009-07-05 to 2015-04-01. Spatial bins of 0.5° and 96 quarter-hour bins of lunar local time. Incomplete coverage limits the range. |
 
-Земные нормы, марсианский модельный снимок и лунные наблюдения относятся к разным физическим величинам, высотам и периодам. Они не объединяются в общий балл. Пропуски остаются `null`, настоящий ноль сохраняется. Неизвестные осадки/влажность Марса не заменяются нулём.
+These sources measure different quantities, heights and periods. They are shown for planning but **never mixed into the terrain score**. Missing values stay null. Missing Mars humidity or precipitation is not replaced by zero.
 
-Климат всей Земли и вся таблица Diviner для одного поиска не скачиваются. Земной контекст запрашивается по точке, для Луны читается нужный блок **10 848 байт** через HTTP Range с проверкой координат и размера. Паспорта загружаются после результатов и могут быть недоступны независимо от поиска.
+POWER is queried by point. Diviner uses a validated HTTP range request for the relevant 10,848-byte block. Passports load after terrain results, so an unavailable climate source does not block search.
 
-## Изображения и исследовательские данные
+## Images and earlier experiments
 
-NASA Trek и Esri служат визуальным контекстом и не подаются на вход terrain score. Источники текстур указаны в [web/public/textures/SOURCES.md](https://github.com/Org666777148852/web/blob/main/public/textures/SOURCES.md).
+| Source | Use |
+|---|---|
+| [NASA Trek](https://trek.nasa.gov/) | Moon and Mars globe imagery. [Specific products and credits](https://github.com/naza-aezakmi/web/blob/main/public/textures/SOURCES.md). |
+| [Esri World Imagery](https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer) | Earth satellite view, with imagery-provider attribution in the app. |
+| [ESA WorldCover 2021 v200](https://esa-worldcover.org/en) | Land-cover context and bare/sparse-cover screening in the separate KMeans catalogue. |
 
-ESA WorldCover, MiniBatchKMeans, 150 000 обучающих наблюдений Марса и каталог из 30 мест относятся к [отдельному эксперименту](EXPERIMENTAL_MODEL.md). WorldCover-фильтрация этого каталога не применяется автоматически к нынешнему пулу кандидатов. Объёмы эксперимента нельзя выдавать за размер обучения действующего поиска.
+Images are visual context, not score inputs. WorldCover screening in the experimental catalogue is not applied to the live candidate pool. [Experimental model](EXPERIMENTAL_MODEL.md).
 
-## Воспроизвести объёмы
+## Reproduce the counts
+
+From `ml/`, with `api/` beside it:
 
 ```bash
-# Из ml/ при соседнем checkout api/:
 python3 scripts/audit_production.py --api ../api
-
-# Пересоздать snapshot при обновлении атласа:
-python3 scripts/audit_production.py --api ../api --output docs/production-data-audit.json
 ```
 
-Аудит читает manifest, проверяет наличие тайлов, считает окна/отсчёты и декодирует все флаги маски. [Snapshot](production-data-audit.json) содержит SHA-256 индекса, маски и кода расчёта. Размеры тайлов не включают индекс и маски. Аудит не восстанавливает и не валидирует исходные научные DEM; повторная обработка сырых архивов — отдельная процедура.
+To save an updated snapshot, add `--output docs/production-data-audit.json`. The audit checks tile presence, counts records, decodes water-screen flags and records SHA-256 hashes for the index, mask and worker. It does not independently validate the original scientific DEMs.

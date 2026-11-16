@@ -1,0 +1,6 @@
+task,profile,range,slope,roughness
+rover-testing,0.2,0.1,0.45,0.25
+eva-training,0.2,0.25,0.45,0.1
+landing-sensors,0.45,0.25,0.2,0.1
+excavation,0.1,0.2,0.45,0.25
+field-geology,0.45,0.25,0.1,0.2
